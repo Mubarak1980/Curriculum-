@@ -1,4 +1,3 @@
-
 {
   "grade": 12,
   "subjects": [
@@ -7,45 +6,124 @@
       "units": [
         {
           "unit": "Unit 1",
-          "title": "Application of Biology",
+          "title": "Biology Application",
           "subtopics": [
-            "1.1 Biotechnology and Genetic Engineering",
-            "1.2 Agriculture and Food Production",
-            "1.3 Medicine and Pharmacology",
-            "1.4 Environmental Management and Bioremediation"
+            "1.1 Application in conservation of natural resources",
+            "1.2 Food and nutrition security",
+            "1.3 Creating consciousness citizen and ensuring sustainability development",
+            "1.4 Application in biotechnology",
+            "1.5 Genetics engineering",
+            "1.6 Health and wellbeing"
           ]
         },
         {
           "unit": "Unit 2",
-          "title": "Evolution",
+          "title": "Microorganisms",
           "subtopics": [
-            "2.1 Origin of Life",
-            "2.2 Theories of Evolution",
-            "2.3 Evidence for Evolution",
-            "2.4 Mechanisms of Evolution and Speciation",
-            "2.5 Human Evolution"
+            "2.1 Eubacteria",
+            "2.1.1 Bacterial shapes",
+            "2.1.2 Nutritional types of bacteria",
+            "2.1.3 Reproduction of bacteria (ignorable)",
+            "2.1.3.1 A sexual reproduction of bacteria",
+            "2.1.3.2 Asexual reproduction of bacteria",
+            "2.2 Archaea",
+            "2.2.1 Beneficial aspects of archaea",
+            "2.2.2 Physical factors that affecting microbial growth",
+            "2.3 Fungi",
+            "2.3.1 General characteristics of true fungi",
+            "2.3.2 Ecology of fungi",
+            "2.3.3 Classification of fungi",
+            "2.3.4 Reproduction in fungi sporulation",
+            "2.3.5 Economic importance of fungi",
+            "2.4 Protozoa",
+            "2.4.1 Common disease caused by protozoa",
+            "2.5 Virus",
+            "2.5.1 Characteristics of viruses",
+            "2.5.2 Viral symptoms",
+            "2.5.3 Classification of viruses",
+            "2.6 Normal microbionta",
+            "2.7 Modes of disease transmission",
+            "2.8 Use of microorganisms",
+            "2.9 Controlling microorganisms",
+            "2.10 Bacterial isolation techniques",
+            "2.11 Renowned microbiologist in Ethiopia"
           ]
         },
         {
           "unit": "Unit 3",
-          "title": "Human Anatomy and Physiology",
+          "title": "Energy Transformation",
           "subtopics": [
-            "3.1 Nervous System and Coordination",
-            "3.2 Endocrine System and Hormones",
-            "3.3 Sensory Systems",
-            "3.4 Musculoskeletal System",
-            "3.5 Excretory System and Homeostasis",
-            "3.6 Reproductive System"
+            "3.1 Energy",
+            "3.2 Photosynthesis",
+            "3.2.1 Photosynthesis pigments",
+            "3.2.2 Light dependent and light independent reaction",
+            "3.2.5 Light dependent reaction (Calvin cycle)",
+            "3.3 Contribution of photosynthesis for the continuity of life for O2 and CO2 balance and global worming",
+            "3.4 Cellular respiration",
+            "3.4.1 The site if cellular respiration",
+            "3.4.2 Stages of respiration"
           ]
         },
         {
           "unit": "Unit 4",
-          "title": "Animal Behavior",
+          "title": "Evolution",
           "subtopics": [
-            "4.1 Introduction to Animal Behavior",
-            "4.2 Innate Behavior",
-            "4.3 Learned Behavior",
-            "4.4 Social Behavior and Communication"
+            "4.1 Evolution",
+            "4.1.1 Definition",
+            "4.1.2 Theory if evolution",
+            "4.1.3 The evidence for evolution (ignorable)",
+            "4.1.3.1 Comparative anatomy",
+            "4.1.3.2 Embryology",
+            "4.1.3.3 Paleontology",
+            "4.1.3.4 Comparative biochemistry",
+            "4.1.4 Natural selection: definition types and examples",
+            "4.1.5 Human evolution",
+            "4.1.6 Mutations",
+            "4.1.7 Genetics drift",
+            "4.1.8 Gene flow (immigration and immigration)",
+            "4.1.9 Causes if species extinction"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Human Body System",
+          "subtopics": [
+            "5.1 Nervous system",
+            "5.1.1 Neurons and their functions",
+            "5.1.2 Nerve impulse and their transmission",
+            "5.1.3 Neurotransmitters",
+            "5.1.4 Types of nerve systems",
+            "5.1.6 Reflection action",
+            "5.1.7 Drug a abuse",
+            "5.2 Sense organs",
+            "5.2.1 Skin",
+            "5.2.2 The tongue",
+            "5.2.3 The nose",
+            "5.2.4 The eye",
+            "5.2.5 The ear",
+            "5.2.6 The endocrine system",
+            "5.3 Homeostasis in human body",
+            "5.3.1 The structure and the function of human kidney"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Climate Change",
+          "subtopics": [
+            "6.1.1 Definition if climate change",
+            "6.1.2 Causes of climate change",
+            "6.2 Effects if climate change",
+            "6.2.1 Effects of climate change on biodiversity",
+            "6.2.2 Effects of climate change on agriculture",
+            "6.2.3 Effects of climate change on forest productivity",
+            "6.2.4.1 Climate change and natural disasters",
+            "6.2.4.2 Melting ice and rising sea",
+            "6.2.4.3 Extreme weather shifting rainfall",
+            "6.2.4.4 Risks of climate change for human health",
+            "6.3 International conventions",
+            "6.3.1 United nations framework convention",
+            "6.3.2 Kyoto protocol on climate change",
+            "6.3.3 International and national practices of implementation of conventions"
           ]
         }
       ]
@@ -55,42 +133,110 @@
       "units": [
         {
           "unit": "Unit 1",
-          "title": "Transition Elements",
+          "title": "Acid Base Equilibria",
           "subtopics": [
-            "1.1 General Properties of Transition Elements",
-            "1.2 Electronic Configuration of Transition Metals",
-            "1.3 Characteristic Properties (Color, Catalytic Activity, Complex Formation)",
-            "1.4 Important Compounds of Transition Metals"
+            "1.1 Acid base concept",
+            "1.1.1 Arrhenius concept of acid and base",
+            "1.1.2 Brønsted-Lowry Concept of Acids and Bases",
+            "1.1.2.1 Conjugate Acid-Base Pairs",
+            "1.1.2.2 Auto Ionization of Substances",
+            "1.1.2.3 Amphiprotic Species",
+            "1.1.3 Lewis Concept of Acids and Bases",
+            "1.2 Ionic equilibria of weak acids and bases",
+            "1.2.1 Ionization of Water",
+            "1.2.2 Measures of the Strength of acids and Bases in Aqueous Solution",
+            "1.2.2.1 Concentration of Hydrogen and Hydroxide ions",
+            "1.2.2.2 pH and pOH",
+            "1.2.2.3 Percent Ionization",
+            "1.2.2.4 Dissociation (Ionization) Constants",
+            "1.3 Common ion effect and buffer solution",
+            "1.3.1 The Common Ion Effect",
+            "1.3.2 Buffer Solutions",
+            "1.4 Hydrolysis of salts",
+            "1.4.1 Hydrolysis of Salts of Strong Acids and Strong Bases",
+            "1.4.2 Hydrolysis of Salts of Weak Acids and Strong Bases",
+            "1.4.3 Hydrolysis of Salts of Strong Acids and Weak Bases",
+            "1.4.4 Hydrolysis of Salts of Weak Acids and Weak Bases",
+            "1.5 Acid -base indicators and titration",
+            "1.5.1 Acid–Base Indicators",
+            "1.5.2 Equivalents of Acids and Bases",
+            "1.5.3 Acid–Base Titrations"
           ]
         },
         {
           "unit": "Unit 2",
           "title": "Electrochemistry",
           "subtopics": [
-            "2.1 Redox Reactions and Electrode Potentials",
-            "2.2 Galvanic Cells and Standard Cell Potentials",
-            "2.3 Electrolytic Cells and Commercial Cells",
-            "2.4 Corrosion and Its Prevention"
+            "2.1 Oxidation-reduction reaction",
+            "2.1.1 Oxidation",
+            "2.1.2 Reduction",
+            "2.1.3 Balancing Oxidation-Reduction (Redox) Reactions",
+            "2.2 Electrolysis of aqueous solution",
+            "2.2.1 Electrolytic Cells",
+            "2.2.2 Preferential Discharge",
+            "2.2.3 Electrolysis of Some Selected Aqueous Solutions",
+            "2.3 Quantative aspect of electrolysis",
+            "2.3.1 Faraday’s First Law of Electrolysis",
+            "2.3.2 Faraday’s Second Law of Electrolysis",
+            "2.4 Industrial application of electrolysis",
+            "2.5 Volatic cells"
           ]
         },
         {
           "unit": "Unit 3",
-          "title": "Chemical Kinetics",
+          "title": "Industrial Chemistry",
           "subtopics": [
-            "3.1 Rate of Reactions and Rate Laws",
-            "3.2 Integrated Rate Equations",
-            "3.3 Activation Energy and Arrhenius Equation",
-            "3.4 Reaction Mechanisms and Catalysis"
+            "3.1 Introduction",
+            "3.2 Natural resources and industry",
+            "3.2.1 Natural Resources (Raw Materials)",
+            "3.2.2 Industry",
+            "3.3 Manufacturing of valuable products (chemicals)",
+            "3.3.1 Ammonia (NH3)",
+            "3.3.2 Nitric Acid",
+            "3.3.3 Nitrogen-Based Fertilizers",
+            "3.3.4 Sulphuric Acid",
+            "3.3.5 Some Common Pesticides and Herbicides",
+            "3.3.6 Sodium Carbonate",
+            "3.3.7 Sodium Hydroxide (NaOH)",
+            "3.4 Some manufacturing industries in Ethiopia",
+            "3.4.1 Glass Manufacturing",
+            "3.4.2 Manufacturing of Ceramics",
+            "3.4.3 Cement",
+            "3.4.4 Sugar Manufacturing",
+            "3.4.5 Paper and Pulp",
+            "3.4.6 Tannery",
+            "3.4.7 Food Processing and Preservation",
+            "3.4.8 Manufacturing of Ethanol",
+            "3.4.9 Soap and Detergent"
           ]
         },
         {
           "unit": "Unit 4",
-          "title": "Advanced Organic Chemistry",
+          "title": "Polymers",
           "subtopics": [
-            "4.1 Alcohols, Ethers, and Phenols",
-            "4.2 Aldehydes and Ketones",
-            "4.3 Carboxylic Acids and Their Derivatives",
-            "4.4 Amines and Polymers"
+            "4.1 Introduction to polymers",
+            "4.2 Polymerization Reaction",
+            "4.3 Classification of polymers"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Introduction to Environmental Chemistry",
+          "subtopics": [
+            "5.1 Introduction",
+            "5.1.1 Components of the Environment",
+            "5.1.2 Natural Cycles in the Environment",
+            "5.1.3 Concepts Related to Environmental Chemistry",
+            "5.2 Environmental pollution",
+            "5.2.1 Air Pollution",
+            "5.2.2 Water Pollution",
+            "5.2.3 Land Pollution",
+            "5.3 Global warming and climate change",
+            "5.3.1 Global Warming and Climate Change",
+            "5.3.2 Chemistry of Greenhouse Gasses and Their Effects on Climate Change",
+            "5.4 Green chemistry and cleaner production",
+            "5.4.1 Principle of Green Chemistry",
+            "5.4.2 Cleaner Production in Chemistry"
           ]
         }
       ]
@@ -100,60 +246,65 @@
       "units": [
         {
           "unit": "Unit 1",
-          "title": "Limits and Continuity",
+          "title": "Sequence and Series",
           "subtopics": [
-            "1.1 Introduction to Limits",
-            "1.2 Limit Theorems and Evaluation of Limits",
-            "1.3 Continuity of Functions",
-            "1.4 Asymptotes"
+            "1.1 Sequence",
+            "1.2.1 Arithmetic sequence",
+            "1.2.2 Geometric sequence",
+            "1.3 Sigma notation and partial sum",
+            "1.3.1 Sigma notation",
+            "1.3.2 Sum if arithmetic sequence",
+            "1.3.3 Sum if geometric sequence",
+            "1.4 Infinity series",
+            "1.4.1 Divergent and convergent of infinity series",
+            "1.4.2 Recurring decimals",
+            "1.5 Application of sequence and series in daily life"
           ]
         },
         {
           "unit": "Unit 2",
-          "title": "Derivatives",
+          "title": "Introduction to Calculus",
           "subtopics": [
-            "2.1 The Concept of Derivative",
-            "2.2 Differentiation Rules",
-            "2.3 Chain Rule and Implicit Differentiation",
-            "2.4 Applications of Derivatives (Tangent Lines, Optimization, Curve Sketching)"
+            "2.1.1 Understand rate of change",
+            "2.1.2 Gradient of curves and rate of change",
+            "2.1.3 Gradient at a point on curves",
+            "2.1.4.1 Derivatives of function at a point",
+            "2.1.4.2 Derivative as a function",
+            "2.1.4.3 Derivatives of various functions",
+            "2.1.4.4 Chain rule",
+            "2.1.5 Maximum and minimum point",
+            "2.1.5.1 Increasing and decreasing function",
+            "2.1.5.2 Minimum and maximum value of a function",
+            "2.1.6 Equation of tangent and normal lines on curve",
+            "2.2 Equation of derivatives",
+            "2.2.1 Application of derivatives in finding rate if change",
+            "2.2.2 Application of derivatives in business and economics",
+            "2.2.3 Application of derivatives in road taxation",
+            "2.3 Introduction to integrals",
+            "2.3.1 Areas of region",
+            "2.3.2 Definite integrals",
+            "2.3.3 Area and definite integrals",
+            "2.3.4 More on area",
+            "2.3.5 Application of integration"
           ]
         },
         {
           "unit": "Unit 3",
-          "title": "Applications of Derivatives",
+          "title": "Statistics",
           "subtopics": [
-            "3.1 Extreme Values of Functions",
-            "3.2 Monotonicity and Concavity",
-            "3.3 Related Rates",
-            "3.4 Optimization Problems"
-          ]
-        },
-        {
-          "unit": "Unit 4",
-          "title": "Integral Calculus",
-          "subtopics": [
-            "4.1 Antiderivatives and Indefinite Integrals",
-            "4.2 Integration by Substitution",
-            "4.3 Definite Integrals and Fundamental Theorem of Calculus",
-            "4.4 Applications of Definite Integrals (Area and Volume)"
-          ]
-        },
-        {
-          "unit": "Unit 5",
-          "title": "Three-Dimensional Geometry and Vectors",
-          "subtopics": [
-            "5.1 Vectors in Space",
-            "5.2 Dot Product and Cross Product in 3D",
-            "5.3 Equations of Lines and Planes"
-          ]
-        },
-        {
-          "unit": "Unit 6",
-          "title": "Statistics and Probability",
-          "subtopics": [
-            "6.1 Advanced Counting Techniques (Permutations and Combinations)",
-            "6.2 Probability Rules and Conditional Probability",
-            "6.3 Probability Distributions"
+            "3.1 Measure if absolute dispersions",
+            "3.1.1 Range and inter quartile range",
+            "3.1.2 Mean divination and quartile deviation",
+            "3.1.3 Variance and standard deviation",
+            "3.2 Interpretation of relative dispersion",
+            "3.2.1 Coefficient of range",
+            "3.2.2 Coefficients of quartile deviation",
+            "3.2.3 Coefficient of mean deviation",
+            "3.2.4 Coefficient of variance",
+            "3.3 Use if frequency curves",
+            "3.3.1 Mean, median, mode on frequency curve",
+            "3.3.2 Measure of skewness",
+            "3.4 Sampling techniques"
           ]
         }
       ]
@@ -163,48 +314,59 @@
       "units": [
         {
           "unit": "Unit 1",
-          "title": "Electrostatics",
+          "title": "Application of Physics in Other Fields",
           "subtopics": [
-            "1.1 Coulomb's Law",
-            "1.2 Electric Fields and Electric Potential",
-            "1.3 Capacitance and Dielectrics"
+            "1.1 Physics and other sciences",
+            "1.2 Physics and engineering",
+            "1.3 Medical physics",
+            "1.4 Physics and defense technology",
+            "1.5 Physics in communication"
           ]
         },
         {
           "unit": "Unit 2",
-          "title": "Current Electricity",
+          "title": "Two-Dimensional Motion",
           "subtopics": [
-            "2.1 Electric Current and Resistance",
-            "2.2 Kirchhoff's Laws",
-            "2.3 DC Circuits and Potentiometers"
+            "2.1 Projectile motion",
+            "2.2 Rotational Motion",
+            "2.3 Rotational Dynamics",
+            "2.4 Planetary motion and Kepler’s laws",
+            "2.5 Newton’s law of universal Gravitation"
           ]
         },
         {
           "unit": "Unit 3",
-          "title": "Magnetism and Electromagnetism",
+          "title": "Fluid Mechanics",
           "subtopics": [
-            "3.1 Magnetic Fields and Magnetic Forces",
-            "3.2 Electromagnetic Induction",
-            "3.3 Transformers and AC Circuits"
+            "3.1 Fluid Statics",
+            "3.2 Pressure in fluids at rest",
+            "3.3 Archimedes’ principle",
+            "3.4 Fluid flow"
           ]
         },
         {
           "unit": "Unit 4",
-          "title": "Geometrical and Physical Optics",
+          "title": "Electromagnetism",
           "subtopics": [
-            "4.1 Reflection and Refraction of Light",
-            "4.2 Lenses and Optical Instruments",
-            "4.3 Wave Optics (Interference, Diffraction, and Polarization)"
+            "4.1 Magnets and Magnetic field",
+            "4.2 Magnetic field lines",
+            "4.3 Current and Magnetism",
+            "4.4 Electromagnetic Induction",
+            "4.5 Faraday’s Law of electromagnetic Induction",
+            "4.6 Transformers",
+            "4.7 Application and safety"
           ]
         },
         {
           "unit": "Unit 5",
-          "title": "Introduction to Quantum Physics and Nuclear Physics",
+          "title": "Basics of Electronics",
           "subtopics": [
-            "5.1 Dual Nature of Matter and Radiation",
-            "5.2 Atomic Models and X-rays",
-            "5.3 Radioactivity and Nuclear Reactions",
-            "5.4 Mass Defect and Nuclear Energy"
+            "5.1 Semiconductors",
+            "5.2 Diodes and their Functions",
+            "5.4 Transistors and their application",
+            "5.5 Integrated Circuits",
+            "5.6 Logic gates and logic circuits",
+            "5.7 Application of electronics"
           ]
         }
       ]

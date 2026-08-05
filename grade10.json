@@ -1,1 +1,192 @@
 
+{
+  "grade": 10,
+  "subjects": [
+    {
+      "name": "Biology",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Local Environment",
+          "subtopics": [
+            "1.1 Introduction to Local Environment",
+            "1.2 Ecosystems in the Local Environment",
+            "1.3 Human Impact on the Local Environment",
+            "1.4 Conservation of Natural Resources"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "The Cell",
+          "subtopics": [
+            "2.1 Microscopy and Cell Structure",
+            "2.2 Plant and Animal Cells",
+            "2.3 Specialized Cells",
+            "2.4 Movement Across Cell Membranes"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Tissues and Organs",
+          "subtopics": [
+            "3.1 Plant Tissues",
+            "3.2 Animal Tissues",
+            "3.3 Organs and Organ Systems"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Human Nutrition and Health",
+          "subtopics": [
+            "4.1 Human Digestive System",
+            "4.2 Balanced Diet and Malnutrition",
+            "4.3 Common Diseases and Health"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Biodiversity and Evolution",
+          "subtopics": [
+            "5.1 Concept of Biodiversity",
+            "5.2 Classification Systems",
+            "5.3 Evolution and Natural Selection"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Chemical Reactions and Stoichiometry",
+          "subtopics": [
+            "1.1 Chemical Equations",
+            "1.2 Types of Chemical Reactions",
+            "1.3 Laws of Chemical Combination",
+            "1.4 Mole Concept and Stoichiometry"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Solutions",
+          "subtopics": [
+            "2.1 Types of Solutions",
+            "2.2 Solubility and Concentration",
+            "2.3 Factors Affecting Solubility"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Electrochemistry",
+          "subtopics": [
+            "3.1 Oxidation and Reduction",
+            "3.2 Electrochemical Cells",
+            "3.3 Electrolysis"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Periodic Table and Periodicity",
+          "subtopics": [
+            "4.1 Modern Periodic Table",
+            "4.2 Periodic Trends in Properties"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Relations and Functions",
+          "subtopics": [
+            "1.1 Relations",
+            "1.2 Functions",
+            "1.3 Linear Functions",
+            "1.4 Quadratic Functions"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Coordinate Geometry",
+          "subtopics": [
+            "2.1 Distance Formula",
+            "2.2 Midpoint Formula",
+            "2.3 Equation of a Line"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Trigonometry",
+          "subtopics": [
+            "3.1 Trigonometric Ratios of Acute Angles",
+            "3.2 Values of Special Angles",
+            "3.3 Applications of Right Triangles"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Probability and Statistics",
+          "subtopics": [
+            "4.1 Data Organization",
+            "4.2 Measures of Central Tendency",
+            "4.3 Basic Probability"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Physics",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Vectors",
+          "subtopics": [
+            "1.1 Scalar and Vector Quantities",
+            "1.2 Graphical Addition of Vectors",
+            "1.3 Resolution of Vectors"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Kinematics",
+          "subtopics": [
+            "2.1 Motion in a Plane",
+            "2.2 Projectile Motion",
+            "2.3 Circular Motion"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Dynamics",
+          "subtopics": [
+            "3.1 Newton's Laws of Motion",
+            "3.2 Momentum and Impulse",
+            "3.3 Conservation of Momentum"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Work, Energy, and Power",
+          "subtopics": [
+            "4.1 Work Done by Constant Forces",
+            "4.2 Kinetic and Potential Energy",
+            "4.3 Work-Energy Theorem",
+            "4.4 Power"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Electrostatics and Current Electricity",
+          "subtopics": [
+            "5.1 Electric Charge and Coulomb's Law",
+            "5.2 Electric Current and Ohm's Law",
+            "5.3 Electrical Circuits and Resistance"
+          ]
+        }
+      ]
+    }
+  ]
+}

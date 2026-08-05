@@ -1,1 +1,213 @@
 
+{
+  "grade": 12,
+  "subjects": [
+    {
+      "name": "Biology",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Application of Biology",
+          "subtopics": [
+            "1.1 Biotechnology and Genetic Engineering",
+            "1.2 Agriculture and Food Production",
+            "1.3 Medicine and Pharmacology",
+            "1.4 Environmental Management and Bioremediation"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Evolution",
+          "subtopics": [
+            "2.1 Origin of Life",
+            "2.2 Theories of Evolution",
+            "2.3 Evidence for Evolution",
+            "2.4 Mechanisms of Evolution and Speciation",
+            "2.5 Human Evolution"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Human Anatomy and Physiology",
+          "subtopics": [
+            "3.1 Nervous System and Coordination",
+            "3.2 Endocrine System and Hormones",
+            "3.3 Sensory Systems",
+            "3.4 Musculoskeletal System",
+            "3.5 Excretory System and Homeostasis",
+            "3.6 Reproductive System"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Animal Behavior",
+          "subtopics": [
+            "4.1 Introduction to Animal Behavior",
+            "4.2 Innate Behavior",
+            "4.3 Learned Behavior",
+            "4.4 Social Behavior and Communication"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Transition Elements",
+          "subtopics": [
+            "1.1 General Properties of Transition Elements",
+            "1.2 Electronic Configuration of Transition Metals",
+            "1.3 Characteristic Properties (Color, Catalytic Activity, Complex Formation)",
+            "1.4 Important Compounds of Transition Metals"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Electrochemistry",
+          "subtopics": [
+            "2.1 Redox Reactions and Electrode Potentials",
+            "2.2 Galvanic Cells and Standard Cell Potentials",
+            "2.3 Electrolytic Cells and Commercial Cells",
+            "2.4 Corrosion and Its Prevention"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Chemical Kinetics",
+          "subtopics": [
+            "3.1 Rate of Reactions and Rate Laws",
+            "3.2 Integrated Rate Equations",
+            "3.3 Activation Energy and Arrhenius Equation",
+            "3.4 Reaction Mechanisms and Catalysis"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Advanced Organic Chemistry",
+          "subtopics": [
+            "4.1 Alcohols, Ethers, and Phenols",
+            "4.2 Aldehydes and Ketones",
+            "4.3 Carboxylic Acids and Their Derivatives",
+            "4.4 Amines and Polymers"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Limits and Continuity",
+          "subtopics": [
+            "1.1 Introduction to Limits",
+            "1.2 Limit Theorems and Evaluation of Limits",
+            "1.3 Continuity of Functions",
+            "1.4 Asymptotes"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Derivatives",
+          "subtopics": [
+            "2.1 The Concept of Derivative",
+            "2.2 Differentiation Rules",
+            "2.3 Chain Rule and Implicit Differentiation",
+            "2.4 Applications of Derivatives (Tangent Lines, Optimization, Curve Sketching)"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Applications of Derivatives",
+          "subtopics": [
+            "3.1 Extreme Values of Functions",
+            "3.2 Monotonicity and Concavity",
+            "3.3 Related Rates",
+            "3.4 Optimization Problems"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Integral Calculus",
+          "subtopics": [
+            "4.1 Antiderivatives and Indefinite Integrals",
+            "4.2 Integration by Substitution",
+            "4.3 Definite Integrals and Fundamental Theorem of Calculus",
+            "4.4 Applications of Definite Integrals (Area and Volume)"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Three-Dimensional Geometry and Vectors",
+          "subtopics": [
+            "5.1 Vectors in Space",
+            "5.2 Dot Product and Cross Product in 3D",
+            "5.3 Equations of Lines and Planes"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Statistics and Probability",
+          "subtopics": [
+            "6.1 Advanced Counting Techniques (Permutations and Combinations)",
+            "6.2 Probability Rules and Conditional Probability",
+            "6.3 Probability Distributions"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Physics",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Electrostatics",
+          "subtopics": [
+            "1.1 Coulomb's Law",
+            "1.2 Electric Fields and Electric Potential",
+            "1.3 Capacitance and Dielectrics"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Current Electricity",
+          "subtopics": [
+            "2.1 Electric Current and Resistance",
+            "2.2 Kirchhoff's Laws",
+            "2.3 DC Circuits and Potentiometers"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Magnetism and Electromagnetism",
+          "subtopics": [
+            "3.1 Magnetic Fields and Magnetic Forces",
+            "3.2 Electromagnetic Induction",
+            "3.3 Transformers and AC Circuits"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Geometrical and Physical Optics",
+          "subtopics": [
+            "4.1 Reflection and Refraction of Light",
+            "4.2 Lenses and Optical Instruments",
+            "4.3 Wave Optics (Interference, Diffraction, and Polarization)"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Introduction to Quantum Physics and Nuclear Physics",
+          "subtopics": [
+            "5.1 Dual Nature of Matter and Radiation",
+            "5.2 Atomic Models and X-rays",
+            "5.3 Radioactivity and Nuclear Reactions",
+            "5.4 Mass Defect and Nuclear Energy"
+          ]
+        }
+      ]
+    }
+  ]
+}

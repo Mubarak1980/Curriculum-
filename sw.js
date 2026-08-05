@@ -1,8 +1,12 @@
-
 const CACHE_NAME = 'curriculum-cache-v1';
 const ASSETS_TO_CACHE = [
     'index.html',
-    'manifest.json'
+    'manifest.json',
+    'style.css',
+    'grade9.json',
+    'grade10.json',
+    'grade11.json',
+    'grade12.json'
 ];
 
 self.addEventListener('install', (event) => {

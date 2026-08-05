@@ -10,7 +10,7 @@
 
     <div class="container">
         <header>
-            <h1>Ethiopian Curriculum Explorer</h1>
+            <h1> Curriculum</h1>
             <p class="subtitle">Select your grade and subject to review subtopics.</p>
         </header>
 
@@ -135,96 +135,117 @@
             contentDiv.innerHTML = html;
         }
 
-        // Extracts meaningful core keywords to find similar or related topics across grades
-        function extractKeywords(text) {
-            const stopWords = new Set(['and', 'the', 'of', 'in', 'to', 'a', 'an', 'for', 'on', 'with', 'by', 'as', 'at', 'from', 'intro', 'introduction', 'basic', 'general']);
-            return text.toLowerCase()
-                .replace(/^(unit\s*\d+[\s:\-]*|\d+(\.\d+)*[\s:\-]*)/i, '') // remove numbering/prefixes
-                .replace(/[^\w\s]/gi, '') // remove punctuation
-                .split(/\s+/)
-                .filter(word => word.length > 3 && !stopWords.has(word));
-        }
+        // SMART SEMANTIC CONCEPT CLUSTERS (Maps related academic concepts regardless of spelling nuances)
+        const semanticClusters = {
+            "Vectors & Direction": ["vector", "scalars", "magnitude", "direction", "displacement"],
+            "Cellular & Molecular Biology": ["cell", "dna", "protein", "enzyme", "nucleus", "membrane", "biosphere"],
+            "Ecology & Environment": ["ecosystem", "ecology", "environment", "biome", "succession", "biodiversity", "population"],
+            "Motion & Kinematics": ["motion", "speed", "velocity", "acceleration", "projectile", "kinematics"],
+            "Forces & Dynamics": ["force", "newton", "friction", "momentum", "gravity", "laws of motion"],
+            "Chemical Bonding & Structure": ["bond", "ionic", "covalent", "metallic", "atomic", "electron", "periodic"],
+            "Equations & Algebra": ["equation", "linear", "quadratic", "simultaneous", "polynomial", "inequality"],
+            "Trigonometry & Geometry": ["trigonometry", "triangle", "angle", "polygon", "sine", "cosine", "tangent"]
+        };
 
-        function renderCommonAnalysis() {
-            contentDiv.innerHTML = `<h2>🔍 Related & Common Units & Topics</h2><p class="subtitle">Tracking similar subject themes and overlapping concepts across grades.</p>`;
+        function renderSmartAnalysis() {
+            contentDiv.innerHTML = `<h2>🧠 Smart Curriculum Conceptual Engine</h2><p class="subtitle">Categorizing same-subject progressions and deep conceptual links across grades.</p>`;
             
-            const themeMap = {};
+            const sameSubjectMap = {}; 
+            const crossDisciplineMap = {}; 
 
+            const allUnits = [];
             Object.keys(allGradesData).forEach(gradeKey => {
                 const gradeData = allGradesData[gradeKey];
-                const gradeNum = gradeData.grade;
-
                 gradeData.subjects.forEach(subject => {
                     subject.units.forEach(unit => {
-                        // Combine unit title and its subtopics to evaluate thematic overlap
-                        const combinedText = `${unit.title} ${unit.subtopics.join(' ')}`;
-                        const keywords = extractKeywords(combinedText);
-
-                        keywords.forEach(keyword => {
-                            if (!themeMap[keyword]) {
-                                themeMap[keyword] = { theme: keyword, occurrences: [] };
-                            }
-                            
-                            const entryId = `G${gradeNum}-${subject.name}-${unit.unit}`;
-                            if (!themeMap[keyword].occurrences.some(o => o.id === entryId)) {
-                                themeMap[keyword].occurrences.push({
-                                    id: entryId,
-                                    grade: gradeNum,
-                                    subject: subject.name,
-                                    unit: unit.unit,
-                                    title: unit.title
-                                });
-                            }
+                        allUnits.push({
+                            grade: gradeData.grade,
+                            subject: subject.name,
+                            unit: unit.unit,
+                            title: unit.title,
+                            text: `${unit.title} ${unit.subtopics.join(' ')}`.toLowerCase()
                         });
                     });
                 });
             });
 
-            let commonHtml = `<h3 style="margin-top: 20px; color: var(--primary);">🔗 Similar & Related Concepts Across Grades</h3>`;
-            let foundCommon = false;
-
-            const sortedThemes = Object.values(themeMap).sort((a, b) => b.occurrences.length - a.occurrences.length);
-
-            sortedThemes.forEach(item => {
-                const uniqueGrades = [...new Set(item.occurrences.map(o => o.grade))];
+            Object.keys(semanticClusters).forEach(clusterName => {
+                const keywords = semanticClusters[clusterName];
                 
-                // Only list themes that connect across multiple distinct grade levels
-                if (uniqueGrades.length > 1 && item.occurrences.length >= 2) {
-                    foundCommon = true;
-                    const capitalizedTheme = item.theme.charAt(0).toUpperCase() + item.theme.slice(1);
+                allUnits.forEach(u => {
+                    const matchesKeyword = keywords.some(kw => u.text.includes(kw));
+                    if (matchesKeyword) {
+                        // Category 1: Same Subject Progressions
+                        const subjectKey = `${u.subject} -> ${clusterName}`;
+                        if (!sameSubjectMap[subjectKey]) sameSubjectMap[subjectKey] = [];
+                        if (!sameSubjectMap[subjectKey].some(item => item.grade === u.grade && item.unit === u.unit)) {
+                            sameSubjectMap[subjectKey].push(u);
+                        }
 
-                    commonHtml += `
+                        // Category 2: Cross-Discipline Related Topics
+                        if (!crossDisciplineMap[clusterName]) crossDisciplineMap[clusterName] = [];
+                        if (!crossDisciplineMap[clusterName].some(item => item.grade === u.grade && item.subject === u.subject && item.unit === u.unit)) {
+                            crossDisciplineMap[clusterName].push(u);
+                        }
+                    }
+                });
+            });
+
+            // --- RENDER SECTION 1: Same Subject Progressions ---
+            let sameSubjectHtml = `<h3 style="margin-top: 20px; color: var(--primary);">📌 1. Common Concepts Within the Same Subject</h3>`;
+            let foundSameSubject = false;
+
+            Object.keys(sameSubjectMap).forEach(key => {
+                const items = sameSubjectMap[key];
+                const uniqueGrades = [...new Set(items.map(i => i.grade))];
+                
+                if (uniqueGrades.length > 1) {
+                    foundSameSubject = true;
+                    sameSubjectHtml += `
                         <div class="unit-card">
-                            <div class="unit-header">📌 Theme / Topic Cluster: "${capitalizedTheme}"</div>
+                            <div class="unit-header">Subject Progression: ${key}</div>
                             <ul>
-                                ${item.occurrences.map(occ => `<li>Grade ${occ.grade} - <b>${occ.subject}</b> (Unit ${occ.unit}: ${occ.title})</li>`).join('')}
+                                ${items.map(i => `<li>Grade ${i.grade} - Unit ${i.unit}: <b>${i.title}</b></li>`).join('')}
                             </ul>
                         </div>`;
                 }
             });
+            if (!foundSameSubject) sameSubjectHtml += `<p>No multi-grade progressions found within the same subject yet.</p>`;
 
-            if (!foundCommon) {
-                commonHtml += `<p>No broad overlapping themes found across different grades yet.</p>`;
-            }
+            // --- RENDER SECTION 2: Smart Related Cross-Topic Links ---
+            let crossHtml = `<h3 style="margin-top: 30px; color: var(--primary);">🔗 2. Smart Related Topics & Conceptual Links</h3>`;
+            let foundCross = false;
 
-            contentDiv.innerHTML += commonHtml;
+            Object.keys(crossDisciplineMap).forEach(clusterName => {
+                const items = crossDisciplineMap[clusterName];
+                const uniqueSubjects = [...new Set(items.map(i => i.subject))];
+
+                if (items.length >= 2) {
+                    foundCross = true;
+                    crossHtml += `
+                        <div class="unit-card">
+                            <div class="unit-header">Concept Cluster: "${clusterName}"</div>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: -5px; margin-bottom: 10px;">
+                                Semantically linked across subjects: <b>${uniqueSubjects.join(', ')}</b>
+                            </p>
+                            <ul>
+                                ${items.map(i => `<li>Grade ${i.grade} (${i.subject}) - Unit ${i.unit}: <b>${i.title}</b></li>`).join('')}
+                            </ul>
+                        </div>`;
+                }
+            });
+            if (!foundCross) crossHtml += `<p>No conceptual links found.</p>`;
+
+            contentDiv.innerHTML += sameSubjectHtml + crossHtml;
         }
 
         // Event Listeners
-        gradeSelect.addEventListener('change', (e) => {
-            loadGradeData(e.target.value);
-        });
-
-        subjectSelect.addEventListener('change', () => {
-            if (currentData) renderCurriculum(currentData.subjects);
-        });
-
-        searchInput.addEventListener('input', () => {
-            if (currentData) renderCurriculum(currentData.subjects);
-        });
-
+        gradeSelect.addEventListener('change', (e) => loadGradeData(e.target.value));
+        subjectSelect.addEventListener('change', () => { if (currentData) renderCurriculum(currentData.subjects); });
+        searchInput.addEventListener('input', () => { if (currentData) renderCurriculum(currentData.subjects); });
+        
         commonViewBtn.addEventListener('click', () => {
-            renderCommonAnalysis();
+            renderSmartAnalysis();
         });
 
         // Initial load on page start

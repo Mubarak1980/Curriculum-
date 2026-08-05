@@ -1,186 +1,46 @@
-
 {
   "grade": 11,
   "subjects": [
     {
-      "name": "Biology",
-      "units": [
-        {
-          "unit": "Unit 1",
-          "title": "The Science of Biology and Laboratory Safety",
-          "subtopics": [
-            "1.1 The Scope and Importance of Biology",
-            "1.2 Scientific Enquiry and Experimental Design",
-            "1.3 Laboratory Safety and Equipment"
-          ]
-        },
-        {
-          "unit": "Unit 2",
-          "title": "Biochemistry",
-          "subtopics": [
-            "2.1 Chemical Elements of Life",
-            "2.2 Water and Its Properties",
-            "2.3 Carbohydrates",
-            "2.4 Lipids",
-            "2.5 Proteins",
-            "2.6 Nucleic Acids",
-            "2.7 Enzymes"
-          ]
-        },
-        {
-          "unit": "Unit 3",
-          "title": "Cell Biology",
-          "subtopics": [
-            "3.1 Structure and Function of Cellular Organelles",
-            "3.2 Membrane Structure and Transport",
-            "3.3 Cell Division (Mitosis and Meiosis)"
-          ]
-        },
-        {
-          "unit": "Unit 4",
-          "title": "Human Biology and Health",
-          "subtopics": [
-            "4.1 Digestive System and Nutrition",
-            "4.2 Respiratory System and Gas Exchange",
-            "4.3 Circulatory System",
-            "4.4 Immune System and Diseases"
-          ]
-        },
-        {
-          "unit": "Unit 5",
-          "title": "Genetics",
-          "subtopics": [
-            "5.1 Mendelian Genetics",
-            "5.2 DNA Structure and Replication",
-            "5.3 Protein Synthesis",
-            "5.4 Mutations and Genetic Engineering"
-          ]
-        },
-        {
-          "unit": "Unit 6",
-          "title": "Ecology and Environment",
-          "subtopics": [
-            "6.1 Ecosystem Dynamics",
-            "6.2 Energy Flow and Nutrient Cycles",
-            "6.3 Population Ecology",
-            "6.4 Conservation of Biodiversity"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Chemistry",
-      "units": [
-        {
-          "unit": "Unit 1",
-          "title": "The Atomic Structure and Periodic Table",
-          "subtopics": [
-            "1.1 Dalton's Atomic Theory and Modern Atomic Model",
-            "1.2 Quantum Numbers and Orbitals",
-            "1.3 Electronic Configuration of Atoms",
-            "1.4 Periodic Properties and Trends"
-          ]
-        },
-        {
-          "unit": "Unit 2",
-          "title": "Chemical Bonding and Structure",
-          "subtopics": [
-            "2.1 Ionic Bonding",
-            "2.2 Covalent Bonding and Molecular Geometry",
-            "2.3 Intermolecular Forces",
-            "2.4 Metallic Bonding"
-          ]
-        },
-        {
-          "unit": "Unit 3",
-          "title": "Chemical Kinetics and Chemical Equilibrium",
-          "subtopics": [
-            "3.1 Rates of Chemical Reactions",
-            "3.2 Factors Affecting Reaction Rates",
-            "3.3 Chemical Equilibrium and Equilibrium Constant",
-            "3.4 Le Chatelier's Principle"
-          ]
-        },
-        {
-          "unit": "Unit 4",
-          "title": "Acids, Bases, and Salts",
-          "subtopics": [
-            "4.1 Properties of Acids and Bases",
-            "4.2 Theories of Acids and Bases (Arrhenius, Brønsted-Lowry, Lewis)",
-            "4.3 pH and pOH Scale",
-            "4.4 Buffer Solutions and Titration"
-          ]
-        },
-        {
-          "unit": "Unit 5",
-          "title": "Introduction to Organic Chemistry",
-          "subtopics": [
-            "5.1 Characteristics of Carbon Compounds",
-            "5.2 Hydrocarbons (Alkanes, Alkenes, Alkynes)",
-            "5.3 Functional Groups",
-            "5.4 Isomerism"
-          ]
-        }
-      ]
-    },
-    {
       "name": "Mathematics",
       "units": [
         {
-          "unit": "Unit 1",
-          "title": "Further on Logic and Set Theory",
+          "unit": "Unit 7",
+          "title": "Statistics",
           "subtopics": [
-            "1.1 Mathematical Logic and Propositions",
-            "1.2 Logical Equivalences and Quantifiers",
-            "1.3 Advanced Set Operations and Venn Diagrams"
+            "7.1 Types of data (qualitative data and quantitative data: discrete and continuous)",
+            "7.2.1 Grouped frequency distribution",
+            "7.2.2 Grouped continuous",
+            "7.3 Graphical representation of data",
+            "7.4 Measure of central tendency and their interpretation",
+            "7.4.1 Mean of grouped data",
+            "7.4.2 Median for of grouped data",
+            "7.4.3.1 Quartile, decile, and percentile for ungrouped",
+            "7.4.3.2 Quartile, decile and percentile for grouped",
+            "7.4.4 Mode for grouped data",
+            "7.5 Real life application"
           ]
         },
         {
-          "unit": "Unit 2",
-          "title": "Functions and Polynomials",
+          "unit": "Unit 8",
+          "title": "Probability",
           "subtopics": [
-            "2.1 Real-valued Functions and Their Properties",
-            "2.2 Inverse Functions",
-            "2.3 Polynomial Functions and Graphs",
-            "2.4 Rational Functions"
-          ]
-        },
-        {
-          "unit": "Unit 3",
-          "title": "Exponential and Logarithmic Functions",
-          "subtopics": [
-            "3.1 Exponential Functions",
-            "3.2 Logarithmic Functions and Their Properties",
-            "3.3 Solving Exponential and Logarithmic Equations"
-          ]
-        },
-        {
-          "unit": "Unit 4",
-          "title": "Trigonometry",
-          "subtopics": [
-            "4.1 Radian Measure and Trigonometric Functions",
-            "4.2 Graphs of Trigonometric Functions",
-            "4.3 Trigonometric Identities and Equations",
-            "4.4 Solution of Triangles"
-          ]
-        },
-        {
-          "unit": "Unit 5",
-          "title": "Matrices and Determinants",
-          "subtopics": [
-            "5.1 Introduction to Matrices",
-            "5.2 Operations on Matrices",
-            "5.3 Determinants of Matrices",
-            "5.4 Inverse of a Matrix and Systems of Linear Equations"
-          ]
-        },
-        {
-          "unit": "Unit 6",
-          "title": "Vectors and Coordinate Geometry",
-          "subtopics": [
-            "6.1 Vectors in 2D and 3D",
-            "6.2 Dot and Cross Products",
-            "6.3 Lines and Planes in Space"
+            "8.2 Fundamental principles of counting",
+            "8.2.1 Multiplication principal",
+            "8.2.2 Addition principal",
+            "8.3 Permutations and combination",
+            "8.3.1 Permutations",
+            "8.3.2 Combination",
+            "8.4 Binomial",
+            "8.5 Random experiment and outcome",
+            "8.6 Events",
+            "8.6.1 Types of events",
+            "8.7 Probability of events",
+            "8.7.1 Revision on probability",
+            "8.7.2 Axiomatic approach of probability",
+            "8.7.3 Odds in favour of and odds against an event",
+            "8.7.5 Rule of multiplication of probability",
+            "8.8 Real life application"
           ]
         }
       ]
@@ -190,66 +50,393 @@
       "units": [
         {
           "unit": "Unit 1",
-          "title": "Physics and Measurement",
+          "title": "Physics and Human Society",
           "subtopics": [
-            "1.1 Physical Quantities and SI Units",
-            "1.2 Dimensional Analysis",
-            "1.3 Error Analysis and Significant Figures"
+            "1.1 Important of physics to society",
+            "1.2 Physics society and their roles",
+            "1.3 Making physics knowledge",
+            "1.4 The mission of physics and career awareness",
+            "1.5 Current status of physics"
           ]
         },
         {
           "unit": "Unit 2",
-          "title": "Vectors",
+          "title": "Vector",
           "subtopics": [
-            "2.1 Vector Addition and Subtraction",
-            "2.2 Resolution of Vectors",
-            "2.3 Scalar and Vector Products"
+            "2.1 Vectors and types of vectors",
+            "2.2 Graphical method of Addition of vectors in 2D",
+            "2.3 Algebraic method of Addition of vectors in 2D",
+            "2.4 Product of vectors"
           ]
         },
         {
           "unit": "Unit 3",
-          "title": "Kinematics",
+          "title": "Motion in 1D and 2D",
           "subtopics": [
-            "3.1 Motion in One and Two Dimensions",
-            "3.2 Projectile Motion",
-            "3.3 Relative Velocity"
+            "3.1 Uniformly accelerated motion In 1D",
+            "3.2 Equation of uniformly accelerated motion in 2D",
+            "3.3 Graphical representation of uniformay accelerated motion in 1D",
+            "3.4 Vertical motion",
+            "3.5 Uniform circular motion"
           ]
         },
         {
           "unit": "Unit 4",
-          "title": "Dynamics",
+          "title": "Dynamic",
           "subtopics": [
-            "4.1 Newton's Laws of Motion and Applications",
-            "4.2 Friction",
-            "4.3 Circular Motion and Centripetal Force",
-            "4.4 Work, Energy, and Power"
+            "4.1 Concept of force and Newton's law of motion",
+            "4.2 Frictional force",
+            "4.3 The first condition of equilibrium",
+            "4.4 Work, energy and power",
+            "4.5 Conservative of mechanical energy",
+            "4.6 Impulse and Linear momentum"
           ]
         },
         {
           "unit": "Unit 5",
-          "title": "Linear Momentum and Conservation Laws",
+          "title": "Heat Conduction",
           "subtopics": [
-            "5.1 Momentum and Impulse",
-            "5.2 Conservation of Linear Momentum",
-            "5.3 Collisions in 1D and 2D"
+            "5.1 Concept of heat",
+            "5.2 Heat transfer mechanism",
+            "5.3 Heat capacity and specific heat capacity",
+            "5.4 Thermal expansion",
+            "5.5 Change of phase",
+            "5.6 Calorimetry"
           ]
         },
         {
           "unit": "Unit 6",
-          "title": "Fluid Mechanics",
+          "title": "Electrostatic and Electric Circuit",
           "subtopics": [
-            "6.1 Density and Pressure in Fluids",
-            "6.2 Pascal's Principle and Archimedes' Principle",
-            "6.3 Fluid Dynamics and Bernoulli's Equation"
+            "6.1 Coulomb's law",
+            "6.2 Electric Field",
+            "6.3 Electric potential",
+            "6.4 Electric current, resistance and ohm's law",
+            "6.6 Capacitors and capacitance",
+            "6.7 Electric circuit in our surroundings"
           ]
         },
         {
           "unit": "Unit 7",
-          "title": "Heat and Thermodynamics",
+          "title": "Nuclear Physics",
           "subtopics": [
-            "7.1 Temperature and Thermal Expansion",
-            "7.2 Heat Transfer and Calorimetry",
-            "7.3 First and Second Laws of Thermodynamics"
+            "7.1 Nucleus",
+            "7.2 Radioactivity",
+            "7.3 Use of nuclear radiation",
+            "7.4 Nuclear radiation and energy production of nuclear",
+            "7.5 Safety rules against hazardous of nuclear"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Atomic Structure and Periodic Properties of Elements",
+          "subtopics": [
+            "1.1 Introduction",
+            "1.2 Dalton's atomic theory and modern atomic theory",
+            "1.2.1 Postulates of Dalton atomic theory",
+            "1.2.2 Postulates of modern atomic theory",
+            "1.3 Early experiment to charactize the atom",
+            "1.3.1 The discovery of the electrons",
+            "1.3.2 Radioactivity and discovery",
+            "1.3.3 Discovery of neutrons",
+            "1.4 Make up of the nucleus",
+            "1.4.1 Subatomic particles",
+            "1.4.2 Atomic mass and isotopes",
+            "1.5 Electromagnetic radiation and atomic spectra",
+            "1.5.1 Electromagnetic radiation",
+            "1.5.2 The quantum theory and photon",
+            "1.5.3 Atomic spectra",
+            "1.5.4 The bohr model of hydrogen atom",
+            "1.5.5 Limitations of bohr model",
+            "1.5.6 The wave particle duality of matter and energy",
+            "1.6 Quantum mechanical model of atom",
+            "1.6.1 The Heisenberg's principles",
+            "1.6.2 Quantum numbers",
+            "1.7 Electronic configuration and orbital diagram",
+            "1.7.1 Ground state electron configuration of the elements",
+            "1.8 Electron configuration and Periodic table of elements",
+            "1.8.1 Modern periodic table",
+            "1.8.2 Classification of elements",
+            "1.8.3 Periodic properties",
+            "1.8.4 Advantage of periodic classification"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Chemical Bonding",
+          "subtopics": [
+            "2.1 Introduction",
+            "2.1.1 Octet rule",
+            "2.1.2 Types of chemical bonding",
+            "2.2 Ionic bonding",
+            "2.2.1 Lewis electron dot symbol",
+            "2.2.2 Formation of ionic bonding",
+            "2.2.3 Exceptions to octet in ionic bonding",
+            "2.2.4 Properties of ionic compounds",
+            "2.3 Covalent bonds and molecular geometry",
+            "2.3.1 Molecular geometry",
+            "2.3.2 Intermolecular in covalent compounds",
+            "2.4 Metallic bonding (ignorable)",
+            "2.4.1 Formation of mentalic bonding",
+            "2.4.2 Electron model sea",
+            "2.4.3 Properties of mentalic bonding",
+            "2.5 Chemical bonding theory",
+            "2.5.1 Valence bonding theory",
+            "2.5.2 Molecular orbital theory",
+            "2.6 Types of crystals"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Physical Properties of Matter",
+          "subtopics": [
+            "3.1 Introduction",
+            "3.2 Kinetic theory and properties of matter",
+            "3.2.2 Properties of matter",
+            "3.3 The gaseous state (ignorable)",
+            "3.3.1 The kinetic molecular theory of gases",
+            "3.3.2 The gas laws",
+            "3.4 The liquid state",
+            "3.4.1 Energy changes in liquids",
+            "3.5 The solid state"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Chemical Kinetic",
+          "subtopics": [
+            "4.1 Introduction",
+            "4.2 The rate of reaction",
+            "4.3 Factor affecting rate of reaction"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Chemical Equilibrium",
+          "subtopics": [
+            "5.1 Introduction",
+            "5.2 Chemical equilibrium",
+            "5.2.1 Reversible and irreversible reaction",
+            "5.2.2 Attainment and characteristics of chemical equilibria",
+            "5.2.3 Condition for attainment of chemical equilibria",
+            "5.2.4 Equilibrium expression and equilibrium expression",
+            "5.2.5 Application of equilibrium constant",
+            "5.2.6 Changing equilibrium conditions",
+            "5.2.7 Equilibrium and industry"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Some Important Oxygen Containing Organic Compound",
+          "subtopics": [
+            "6.1 Introduction",
+            "6.2 Alcohol and esters",
+            "6.2.1 Classification if alcohols",
+            "6.2.3 Physical properties of alcohols",
+            "6.2.4 Preparation of alcohols",
+            "6.2.5 Chemical preparation of alcohols",
+            "6.2.6 Structure and nomenclature of ethers",
+            "6.2.7 Physical properties of ethers",
+            "6.2.8 Preparation of ethers",
+            "6.2.9 Reaction of ethers",
+            "6.3 Aldehyde and ketones",
+            "6.3.1 Nomenclature",
+            "6.3.2 Physical properties of aldehydes and ketones",
+            "6.4 Carboxylic acids",
+            "6.4.1 Structural wnd nomenclature of carboxylic Acids",
+            "6.4.1.1 Structure of carboxylic Acid",
+            "6.4.2 Physical properties of carboxylic Acids",
+            "6.4.3 Chemical properties of carboxylic Acids",
+            "6.4.4 Preparation of carboxylic Acids",
+            "6.4.5 Fatty acid",
+            "6.4.6 Uses of carboxylic Acids",
+            "6.5 Ester (ignorable)",
+            "6.5.1 Source of esters",
+            "6.5.2 Nomenclature",
+            "6.5.3 Physical properties",
+            "6.5.4 Chemical properties",
+            "6.5.5 Preparation of esters",
+            "6.5.6 Uses of esters",
+            "6.6 Fats and oils",
+            "6.6.1 Source of fats and oils",
+            "6.6.2 Structure of fats and oils",
+            "6.6.3 Physical properties of fats and oils",
+            "6.6.4 Hardening of oils",
+            "6.6.5 Rancidity"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Biology",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Biology and Technology",
+          "subtopics": [
+            "1.1 Learning from nature",
+            "1.2 Biology and technology",
+            "1.2.1 The benefits of biology to technology",
+            "1.2.2 Uses of technology in biology",
+            "1.3 Impacts of biology and technology on society and the natural world",
+            "1.3.1 Impacts of biology on the society and the natural world",
+            "1.3.2 Impacts of technology on the society and the natural world",
+            "1.4 Ethical issues in biology",
+            "1.4.1 Ethical treatment of plants and animals during biological studies",
+            "1.4.1.1 Ethical treatment of plants",
+            "1.4.1.2 Ethical treatment of animals in experiments"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Animals",
+          "subtopics": [
+            "2.1 Characteristics of animals",
+            "2.2 Invertebrates and Vertebrates",
+            "2.2.1 Invertebrate Animals",
+            "2.2.2 Vertebrate Animals",
+            "2.3 Reproduction in Animals",
+            "2.3.1 Asexual reproduction in animals",
+            "2.3.2 Sexual reproduction in animals",
+            "2.3.3 Reproduction in insects (complete and incomplete metamorphosis)",
+            "2.3.4 Reproduction in Frog",
+            "2.3.5 Reproduction in Crocodiles",
+            "2.3.6 Reproduction in Birds",
+            "2.4 The economic importance of animals (insects)",
+            "2.4.1 Beneficial aspects of insects",
+            "2.4.2 Harmful aspects of insects",
+            "2.5 Animal Behavior",
+            "2.5.1 Types of Animal Behavior",
+            "2.5.2 Patterns of Behavior",
+            "2.6 Homeostasis in animals",
+            "2.6.1 Thermoregulation",
+            "2.6.2 Osmoregulation",
+            "2.6.3 Blood Sugar Regulation",
+            "2.6.4 Control of homeostasis",
+            "2.7 Renowned zoologists in Ethiopia"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Enzymes",
+          "subtopics": [
+            "3.1 What are enzymes?",
+            "3.2 Properties and functions of enzymes",
+            "3.2.1 General properties of an enzyme",
+            "3.2.2 The function of enzymes",
+            "3.3 Protein structures",
+            "3.4 Enzyme substrate models",
+            "3.4.1 Enzyme-substrate binding models",
+            "3.4.2 Enzymatic transition state",
+            "3.5 Enzyme regulation",
+            "3.6 Types of enzymes",
+            "3.6.1 Enzyme structural classification",
+            "3.6.2 Basic classification of enzymes",
+            "3.7 Factors affecting enzyme action",
+            "3.7.1 Description on factors affecting enzymatic actions",
+            "3.8 Enzyme kinetics",
+            "3.9 Application of enzymes in industries and their benefits",
+            "3.9.1 Uses of enzyme application",
+            "3.10 Malting in Ethiopian tradition",
+            "3.10.1 Steps of modern malting",
+            "3.10.2 Why is malting for?",
+            "3.10.3 Traditional malting for local alcohol production",
+            "3.11 Renowned Biochemists in Ethiopia"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Genetics",
+          "subtopics": [
+            "4.1 The genetic materials",
+            "4.2 The structure and function of DNA and RNA",
+            "4.2.1 The Structure and function of DNA",
+            "4.2.3 DNA replication",
+            "4.2.2 The structure and function of RNA",
+            "4.3 The process of cell division",
+            "4.3.1 Cell Division",
+            "4.4 Protein synthesis",
+            "4.5 Mendelian inheritance",
+            "4.5.1 Mendelian crosses",
+            "4.5.2 Monohybrid cross",
+            "4.5.3 Dihybrid Cross",
+            "4.6 Sex determination",
+            "4.7 Non-Mendelian inheritance",
+            "4.7.1 Co-dominance, Incomplete dominance and Multiple alleles",
+            "4.7.2 Rh factor inheritance in humans and its medical importance",
+            "4.7.3 Sex-linked inheritance in humans",
+            "4.7.4 Environmental effects on phenotype",
+            "4.8 Human pedigree analysis and its importance",
+            "4.9 Genetic disorders",
+            "4.9.1 Single-gene disorders",
+            "4.9.2 Chromosome disorders",
+            "4.9.3 Multifactorial disorders",
+            "4.10 Genetic testing and counseling",
+            "4.11 Gene therapy",
+            "4.12 Breeding",
+            "4.12.1 Indigenous knowledge of Ethiopian farmers",
+            "4.13 Bioinformatics introduction"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "The Human Body Systems",
+          "subtopics": [
+            "5.1 Human Musculoskeletal Systems",
+            "5.1.1 Types of muscles",
+            "5.1.2 Mechanism of actions of skeletal muscles",
+            "5.2 The reproductive system",
+            "5.2.1 Human reproductive system (Male and Female)",
+            "5.2.2 Gametogenesis",
+            "5.2.2 Positive and negative feedbacks to control the menstrual cycle",
+            "5.2.3 Fertilization and pregnancy",
+            "5.2.4 Mechanism of action of contraceptives",
+            "5.2.5 Causes of infertility in humans",
+            "5.2.6.1 Causes of infertility in women",
+            "5.2.6.2 Infertility in men",
+            "5.2.6 The major sexually transmitted infections (STIs) in Ethiopia",
+            "5.2.7.1 Types of sexually transmitted infections and preventions",
+            "5.2.8 Epidemiology of STIs in Ethiopia",
+            "5.2.8.1 Risks of STIs epidemic in Ethiopia",
+            "5.3 Harmful traditional practices",
+            "5.3.1 Harmful traditional practices",
+            "5.4 Family planning",
+            "5.4.2 Family planning actions",
+            "5.4.3 Family planning services",
+            "5.5 Effects of alcohol use, chewing Khat, cannabis and other drug uses on STIs transmission and unwanted pregnancy",
+            "5.5.1 The effects of alcohol uses",
+            "5.5.2 Effects of chewing Khat",
+            "5.5.3 Effects of drug uses"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Population and Natural Resources",
+          "subtopics": [
+            "6.1 Population ecology",
+            "6.1.2 Exponential and logistic growth in populations",
+            "6.1.3 Demographic structure",
+            "6.1.4 Population regulation",
+            "6.2 Natural resources",
+            "6.2.1 Renewable",
+            "6.2.2 Non-renewable",
+            "6.3 Conservation of natural resources in Ethiopia",
+            "6.4 Impact of traffic accident on wild and domestic animals",
+            "6.5 Impact of human activities on the environment",
+            "6.5.1 Environmental pollution",
+            "6.5.2 Climate change",
+            "6.5.3 Global warming",
+            "6.5.4 Ozone layer depletion",
+            "6.5.5 Acid rain",
+            "6.5.6 Loss of Biodiversity",
+            "6.5.7 Toxic bioaccumulation",
+            "6.5.8 Resource depletion",
+            "6.6 Indigenous conservation practices in Ethiopia"
           ]
         }
       ]

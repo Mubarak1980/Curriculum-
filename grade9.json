@@ -1,1 +1,481 @@
 
+{
+  "grade": 9,
+  "subjects": [
+    {
+      "name": "Biology",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Introduction to Biology",
+          "subtopics": [
+            "1.1 Definition of Biology",
+            "1.2 Why do we study Biology?",
+            "1.3 The Scientific Method",
+            "1.4 Tools of a Biologist",
+            "1.4.1 Laboratory tools of biologist",
+            "1.5 The Light Microscope",
+            "1.5.1 The parts and function of the light microscope",
+            "1.5.2 Handling and using a light microscope",
+            "1.6 General Laboratory Safety Rules"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Characteristics and Classification of Organisms",
+          "subtopics": [
+            "2.1 Characteristics of living things",
+            "2.2 Taxonomy of living things (ignorable)",
+            "2.2.1 Principles of classification",
+            "2.2.2 Taxonomic hierarchies in biological classification",
+            "2.3 Relevance of classification",
+            "2.4 Linnaean system of nomenclature",
+            "2.5 Common Ethiopian animals and plants",
+            "2.6 The five-kingdom system of classification",
+            "2.6.1 Kingdom Monera",
+            "2.6.2 Kingdom Protista",
+            "2.6.3 Kingdom Fungi",
+            "2.6.4 Kingdom Plantae",
+            "2.6.5 Kingdom Animalia",
+            "2.7 Renowned Taxonomists in Ethiopia"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Cells",
+          "subtopics": [
+            "3.1 What is a cell?",
+            "3.2 Cell theory",
+            "3.3 Cell structure and function",
+            "3.4 Types of cells",
+            "3.5 Animal and plant cells",
+            "3.6 Observing cells under a microscope",
+            "3.7 The cell and its environment",
+            "3.7.1 Passive transport",
+            "3.7.2 Active transport",
+            "3.8 Levels of Biological Organization"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Reproduction",
+          "subtopics": [
+            "4.1 Introduction to reproduction",
+            "4.2 Asexual reproduction",
+            "4.3 Types of asexual reproduction",
+            "4.3.1 Fission",
+            "4.3.2 Fragmentation",
+            "4.3.3 Budding",
+            "4.3.4 Vegetative propagation",
+            "4.3.5 Parthenogenesis",
+            "4.4 Sexual reproduction in Humans",
+            "4.5 Primary and secondary sexual characteristics",
+            "4.6 Male reproductive structures",
+            "4.7 Female reproductive structures",
+            "4.8 The Menstrual cycle",
+            "4.9 Fertilization and pregnancy",
+            "4.10 Methods of birth control",
+            "4.11 Sexually transmitted infections (STIs): Transmission and prevention"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Human Health, Nutrition, and Disease",
+          "subtopics": [
+            "5.1 What is food?",
+            "5.2 Nutrition",
+            "5.3 Nutrients",
+            "5.4 Balanced diets",
+            "5.5 Deficiency diseases",
+            "5.6 Malnutrition",
+            "5.7 Substance abuse",
+            "5.8 Infectious and noninfectious diseases",
+            "5.8.1 Infectious diseases",
+            "5.8.2 Non-infectious diseases"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Ecology",
+          "subtopics": [
+            "6.1 Ecology",
+            "6.1.1 Definitions of Common Ecological Terms",
+            "6.1.2 Biotic and abiotic components",
+            "6.1.3 Ecological levels",
+            "6.1.4 Ecosystems",
+            "6.1.5 Biomes",
+            "6.1.6 Ecological succession",
+            "6.2 Ecological relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Chemistry and Its Importance",
+          "subtopics": [
+            "1.1 Definition and Scope of Chemistry",
+            "1.1.1 Definition of Chemistry",
+            "1.1.2 Scope of Chemistry",
+            "1.2 The Relationship Between Chemistry and Other Natural Sciences",
+            "1.3 The Role Chemistry Plays in Production and in the Society",
+            "1.4 Some Common Chemical Industries in Ethiopia"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Measurements and Scientific Methods",
+          "subtopics": [
+            "2.1 Measurements and Units in Chemistry",
+            "2.1.1 SI Units (The International System of Units)",
+            "2.1.2 Derived Units",
+            "2.1.3 Common Prefixes Used in SI Units",
+            "2.1.4 Uncertainty in Measurements",
+            "2.1.5 Precision and Accuracy",
+            "2.1.6 Significant Figures",
+            "2.1.7 Scientific Notation and Decimal Places",
+            "2.2 Chemistry as Experimental Science",
+            "2.2.2 Some Experimental Skills in Chemistry",
+            "2.2.3 Writing a Laboratory Report"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Structure of the Atom",
+          "subtopics": [
+            "3.1 Historical Development of the Atomic Theories of Matter",
+            "3.2 Fundamental Laws of Chemical Reactions",
+            "3.2.1 The Law of Conservation of Mass",
+            "3.2.2 The Law of Definite Proportions",
+            "3.2.3 The Law of Multiple Proportions",
+            "3.3 Atomic Theory",
+            "3.3.1 Dalton’s Atomic Theory",
+            "3.3.2 Modern Atomic Theory",
+            "3.4 Discoveries of the Fundamental Subatomic Particles and the Atomic Nucleus",
+            "3.4.1 Discovery of the Proton",
+            "3.4.2 Discovery of the Electron",
+            "3.4.3 Discovery of the Nucleus",
+            "3.4.4 Discovery of the Neutron",
+            "3.5 Composition of an Atom and the Isotopes",
+            "3.5.1 Electrons, Protons and Neutrons",
+            "3.5.2 Atomic Number and Mass Number",
+            "3.5.3 Atomic Mass and Isotope",
+            "3.5.4 Main Energy Levels",
+            "3.5.5 Electronic Configuration on Main Shells",
+            "3.5.6 Valence Electrons"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Periodic Classification of Elements",
+          "subtopics": [
+            "4.1 Historical Development of Periodic Classification of the Elements",
+            "4.1.1 Dobereiner’s Triads",
+            "4.1.2 Newland’s Law of Octaves",
+            "4.2 Mendeleev’s Classification of the Elements",
+            "4.2.1 Mendeleev’s Periodic Law",
+            "4.2.2 Periodicity",
+            "4.3 The Modern Periodic Table",
+            "4.3.1 The Periodic Law",
+            "4.3.2 Groups and Periods",
+            "4.3.4 The Representative Elements",
+            "4.4 The Major Trends in the Periodic Table",
+            "4.4.2 Ionization Energy",
+            "4.4.3 Electron Affinity",
+            "4.4.4 Electronegativity"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Chemical Bonding",
+          "subtopics": [
+            "5.1 Chemical Bonding",
+            "5.2 Ionic Bonding",
+            "5.2.1 Formation of Ionic Bonding",
+            "5.2.2 Lewis Formulas of Ionic Compounds",
+            "5.2.3 General Properties of Ionic Compounds",
+            "5.3 Covalent Bonding",
+            "5.3.1 Formation of Covalent Bond",
+            "5.3.2 Lewis’s Formula of Covalent Molecules",
+            "5.3.3 Polarity in Covalent Molecules",
+            "5.3.4 Coordinate Covalent Bond (Dative Bond)",
+            "5.3.5 General Properties of Covalent Compounds",
+            "5.4 Metallic Bonding",
+            "5.4.1 Formation of Metallic Bond",
+            "5.4.2 Properties of Metallic Bond"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Further on Sets",
+          "subtopics": [
+            "1.1 Review of Sets",
+            "1.1.1 Definition and Representation of Sets",
+            "1.1.2 Types of Sets",
+            "1.2 Subsets",
+            "1.2.1 Proper and Improper Subsets",
+            "1.2.2 Number of Subsets",
+            "1.3 Operations on Sets",
+            "1.3.1 Union of Sets",
+            "1.3.2 Intersection of Sets",
+            "1.3.3 Difference of Sets",
+            "1.3.4 Complement of Sets",
+            "1.4 Venn Diagrams",
+            "1.5 Application of Sets in Real Life"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "The Number System",
+          "subtopics": [
+            "2.1 Review of Number Systems",
+            "2.1.1 Natural Numbers and Whole Numbers",
+            "2.1.2 Integers",
+            "2.1.3 Rational Numbers",
+            "2.1.4 Irrational Numbers",
+            "2.1.5 Real Numbers",
+            "2.2 Properties of Real Numbers",
+            "2.2.1 Closure Property",
+            "2.2.2 Commutative Property",
+            "2.2.3 Associative Property",
+            "2.2.4 Distributive Property",
+            "2.3 Operations on Real Numbers",
+            "2.4 Representation of Real Numbers on Number Line"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Solving Equations",
+          "subtopics": [
+            "3.1 Linear Equations",
+            "3.1.1 Solving Linear Equations in One Variable",
+            "3.1.2 Applications of Linear Equations",
+            "3.2 Simultaneous Linear Equations",
+            "3.2.1 Solving Equations by Graphical Method",
+            "3.2.2 Solving Equations by Elimination Method",
+            "3.2.3 Solving Equations by Substitution Method",
+            "3.3 Quadratic Equations",
+            "3.3.1 Introduction to Quadratic Equations",
+            "3.3.2 Solving Quadratic Equations",
+            "3.4 Applications of Equations"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Solving Inequalities",
+          "subtopics": [
+            "4.1 Introduction to Inequalities",
+            "4.2 Linear Inequalities in One Variable",
+            "4.2.1 Solving Linear Inequalities",
+            "4.2.2 Representation on Number Line",
+            "4.3 Compound Inequalities",
+            "4.4 Inequalities in Two Variables",
+            "4.5 Graphical Representation of Inequalities"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Introduction to Trigonometry",
+          "subtopics": [
+            "5.1 Introduction to Trigonometry",
+            "5.2 Angles and Their Measurement",
+            "5.3 Right-Angled Triangles",
+            "5.4 Trigonometric Ratios",
+            "5.4.1 Sine Ratio",
+            "5.4.2 Cosine Ratio",
+            "5.4.3 Tangent Ratio",
+            "5.5 Solving Problems Using Trigonometric Ratios",
+            "5.6 Applications of Trigonometry"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Regular Polygons",
+          "subtopics": [
+            "6.1 Introduction to Polygons",
+            "6.2 Types of Polygons",
+            "6.3 Regular and Irregular Polygons",
+            "6.4 Interior Angles of Polygons",
+            "6.5 Exterior Angles of Polygons",
+            "6.6 Properties of Regular Polygons"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "title": "Congruency and Similarity",
+          "subtopics": [
+            "7.1 Congruent Figures",
+            "7.1.1 Conditions for Congruency",
+            "7.2 Similar Figures",
+            "7.2.1 Similarity Ratios",
+            "7.2.2 Properties of Similar Figures",
+            "7.3 Similarity of Triangles",
+            "7.4 Applications of Congruency and Similarity"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "title": "Vectors in Two Dimensions",
+          "subtopics": [
+            "8.1 Introduction to Vectors",
+            "8.2 Scalars and Vectors",
+            "8.3 Representation of Vectors",
+            "8.4 Addition and Subtraction of Vectors",
+            "8.5 Multiplication of Vectors by Scalars",
+            "8.6 Applications of Vectors"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "title": "Statistics and Probability",
+          "subtopics": [
+            "9.1 Introduction to Statistics",
+            "9.2 Collection and Organization of Data",
+            "9.3 Presentation of Data",
+            "9.3.1 Tables",
+            "9.3.2 Graphs and Charts",
+            "9.4 Measures of Central Tendency",
+            "9.4.1 Mean",
+            "9.4.2 Median",
+            "9.4.3 Mode",
+            "9.5 Introduction to Probability",
+            "9.5.1 Experimental Probability",
+            "9.5.2 Theoretical Probability",
+            "9.6 Simple Probability Calculations"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Physics",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Physics and Human Society",
+          "subtopics": [
+            "1.1 Definition and Nature of Physics",
+            "1.1.1 Definition of Physics",
+            "1.1.2 Branches of Physics",
+            "1.2 Physics and Other Fields of Science",
+            "1.3 Physics and Technology",
+            "1.4 Importance of Physics in Society",
+            "1.5 Contributions of Famous Physicists"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Physical Quantities",
+          "subtopics": [
+            "2.1 Physical Quantities",
+            "2.1.1 Fundamental Physical Quantities",
+            "2.1.2 Derived Physical Quantities",
+            "2.2 Measurement and Units",
+            "2.2.1 SI Units",
+            "2.2.2 Prefixes Used in SI Units",
+            "2.3 Measuring Instruments",
+            "2.4 Accuracy and Precision",
+            "2.5 Scientific Notation",
+            "2.6 Scalars and Vectors",
+            "2.6.1 Representation of Vectors",
+            "2.6.2 Addition and Subtraction of Vectors"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Motion in a Straight Line",
+          "subtopics": [
+            "3.1 Introduction to Motion",
+            "3.1.1 Position and Reference Point",
+            "3.1.2 Distance and Displacement",
+            "3.2 Speed and Velocity",
+            "3.2.1 Average Speed",
+            "3.2.2 Average Velocity",
+            "3.3 Acceleration",
+            "3.4 Uniform Motion",
+            "3.5 Uniformly Accelerated Motion",
+            "3.6 Graphical Representation of Motion",
+            "3.7 Equations of Motion"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Force, Work, Energy and Power",
+          "subtopics": [
+            "4.1 Force",
+            "4.1.1 Types of Forces",
+            "4.2 Newton’s Laws of Motion",
+            "4.2.1 Newton’s First Law",
+            "4.2.2 Newton’s Second Law",
+            "4.2.3 Newton’s Third Law",
+            "4.3 Frictional Force",
+            "4.4 Work",
+            "4.4.1 Mechanical Work",
+            "4.5 Energy",
+            "4.5.1 Kinetic Energy",
+            "4.5.2 Potential Energy",
+            "4.5.3 Conservation of Energy",
+            "4.6 Power"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Simple Machines",
+          "subtopics": [
+            "5.1 Introduction to Machines",
+            "5.2 Purpose of Simple Machines",
+            "5.3 Mechanical Advantage",
+            "5.4 Efficiency of Machines",
+            "5.5 Inclined Plane",
+            "5.6 Wedge and Screw",
+            "5.7 Levers",
+            "5.7.1 Types of Levers"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Temperature and Heat",
+          "subtopics": [
+            "6.1 Temperature and Heat Energy",
+            "6.2 Measurement of Temperature",
+            "6.2.1 Thermometers",
+            "6.3 Expansion of Matter",
+            "6.3.1 Expansion of Solids",
+            "6.3.2 Expansion of Liquids",
+            "6.3.3 Expansion of Gases",
+            "6.4 Quantity of Heat",
+            "6.4.1 Specific Heat Capacity",
+            "6.4.2 Heat Capacity",
+            "6.5 Change of State"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "title": "Mechanical Oscillation and Sound Wave",
+          "subtopics": [
+            "7.1 Introduction to Waves",
+            "7.2 Wave Motion",
+            "7.2.1 Wave Propagation",
+            "7.2.2 Mechanical Waves",
+            "7.3 Properties of Waves",
+            "7.3.1 Wavelength",
+            "7.3.2 Frequency",
+            "7.3.3 Amplitude",
+            "7.3.4 Wave Speed",
+            "7.4 Sound Waves",
+            "7.4.1 Production of Sound",
+            "7.4.2 Characteristics of Sound",
+            "7.4.3 Applications of Sound"
+          ]
+        }
+      ]
+    }
+  ]
+}

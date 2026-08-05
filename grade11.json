@@ -1,1 +1,258 @@
 
+{
+  "grade": 11,
+  "subjects": [
+    {
+      "name": "Biology",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "The Science of Biology and Laboratory Safety",
+          "subtopics": [
+            "1.1 The Scope and Importance of Biology",
+            "1.2 Scientific Enquiry and Experimental Design",
+            "1.3 Laboratory Safety and Equipment"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Biochemistry",
+          "subtopics": [
+            "2.1 Chemical Elements of Life",
+            "2.2 Water and Its Properties",
+            "2.3 Carbohydrates",
+            "2.4 Lipids",
+            "2.5 Proteins",
+            "2.6 Nucleic Acids",
+            "2.7 Enzymes"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Cell Biology",
+          "subtopics": [
+            "3.1 Structure and Function of Cellular Organelles",
+            "3.2 Membrane Structure and Transport",
+            "3.3 Cell Division (Mitosis and Meiosis)"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Human Biology and Health",
+          "subtopics": [
+            "4.1 Digestive System and Nutrition",
+            "4.2 Respiratory System and Gas Exchange",
+            "4.3 Circulatory System",
+            "4.4 Immune System and Diseases"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Genetics",
+          "subtopics": [
+            "5.1 Mendelian Genetics",
+            "5.2 DNA Structure and Replication",
+            "5.3 Protein Synthesis",
+            "5.4 Mutations and Genetic Engineering"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Ecology and Environment",
+          "subtopics": [
+            "6.1 Ecosystem Dynamics",
+            "6.2 Energy Flow and Nutrient Cycles",
+            "6.3 Population Ecology",
+            "6.4 Conservation of Biodiversity"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "The Atomic Structure and Periodic Table",
+          "subtopics": [
+            "1.1 Dalton's Atomic Theory and Modern Atomic Model",
+            "1.2 Quantum Numbers and Orbitals",
+            "1.3 Electronic Configuration of Atoms",
+            "1.4 Periodic Properties and Trends"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Chemical Bonding and Structure",
+          "subtopics": [
+            "2.1 Ionic Bonding",
+            "2.2 Covalent Bonding and Molecular Geometry",
+            "2.3 Intermolecular Forces",
+            "2.4 Metallic Bonding"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Chemical Kinetics and Chemical Equilibrium",
+          "subtopics": [
+            "3.1 Rates of Chemical Reactions",
+            "3.2 Factors Affecting Reaction Rates",
+            "3.3 Chemical Equilibrium and Equilibrium Constant",
+            "3.4 Le Chatelier's Principle"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Acids, Bases, and Salts",
+          "subtopics": [
+            "4.1 Properties of Acids and Bases",
+            "4.2 Theories of Acids and Bases (Arrhenius, Brønsted-Lowry, Lewis)",
+            "4.3 pH and pOH Scale",
+            "4.4 Buffer Solutions and Titration"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Introduction to Organic Chemistry",
+          "subtopics": [
+            "5.1 Characteristics of Carbon Compounds",
+            "5.2 Hydrocarbons (Alkanes, Alkenes, Alkynes)",
+            "5.3 Functional Groups",
+            "5.4 Isomerism"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Further on Logic and Set Theory",
+          "subtopics": [
+            "1.1 Mathematical Logic and Propositions",
+            "1.2 Logical Equivalences and Quantifiers",
+            "1.3 Advanced Set Operations and Venn Diagrams"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Functions and Polynomials",
+          "subtopics": [
+            "2.1 Real-valued Functions and Their Properties",
+            "2.2 Inverse Functions",
+            "2.3 Polynomial Functions and Graphs",
+            "2.4 Rational Functions"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Exponential and Logarithmic Functions",
+          "subtopics": [
+            "3.1 Exponential Functions",
+            "3.2 Logarithmic Functions and Their Properties",
+            "3.3 Solving Exponential and Logarithmic Equations"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Trigonometry",
+          "subtopics": [
+            "4.1 Radian Measure and Trigonometric Functions",
+            "4.2 Graphs of Trigonometric Functions",
+            "4.3 Trigonometric Identities and Equations",
+            "4.4 Solution of Triangles"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Matrices and Determinants",
+          "subtopics": [
+            "5.1 Introduction to Matrices",
+            "5.2 Operations on Matrices",
+            "5.3 Determinants of Matrices",
+            "5.4 Inverse of a Matrix and Systems of Linear Equations"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Vectors and Coordinate Geometry",
+          "subtopics": [
+            "6.1 Vectors in 2D and 3D",
+            "6.2 Dot and Cross Products",
+            "6.3 Lines and Planes in Space"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Physics",
+      "units": [
+        {
+          "unit": "Unit 1",
+          "title": "Physics and Measurement",
+          "subtopics": [
+            "1.1 Physical Quantities and SI Units",
+            "1.2 Dimensional Analysis",
+            "1.3 Error Analysis and Significant Figures"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "title": "Vectors",
+          "subtopics": [
+            "2.1 Vector Addition and Subtraction",
+            "2.2 Resolution of Vectors",
+            "2.3 Scalar and Vector Products"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "title": "Kinematics",
+          "subtopics": [
+            "3.1 Motion in One and Two Dimensions",
+            "3.2 Projectile Motion",
+            "3.3 Relative Velocity"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "title": "Dynamics",
+          "subtopics": [
+            "4.1 Newton's Laws of Motion and Applications",
+            "4.2 Friction",
+            "4.3 Circular Motion and Centripetal Force",
+            "4.4 Work, Energy, and Power"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Linear Momentum and Conservation Laws",
+          "subtopics": [
+            "5.1 Momentum and Impulse",
+            "5.2 Conservation of Linear Momentum",
+            "5.3 Collisions in 1D and 2D"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Fluid Mechanics",
+          "subtopics": [
+            "6.1 Density and Pressure in Fluids",
+            "6.2 Pascal's Principle and Archimedes' Principle",
+            "6.3 Fluid Dynamics and Bernoulli's Equation"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "title": "Heat and Thermodynamics",
+          "subtopics": [
+            "7.1 Temperature and Thermal Expansion",
+            "7.2 Heat Transfer and Calorimetry",
+            "7.3 First and Second Laws of Thermodynamics"
+          ]
+        }
+      ]
+    }
+  ]
+}

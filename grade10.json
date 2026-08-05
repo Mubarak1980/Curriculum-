@@ -1,4 +1,3 @@
-
 {
   "grade": 10,
   "subjects": [
@@ -7,49 +6,95 @@
       "units": [
         {
           "unit": "Unit 1",
-          "title": "Local Environment",
+          "title": "Sub-fields of Biology",
           "subtopics": [
-            "1.1 Introduction to Local Environment",
-            "1.2 Ecosystems in the Local Environment",
-            "1.3 Human Impact on the Local Environment",
-            "1.4 Conservation of Natural Resources"
+            "1.1 Subfields of biology",
+            "1.2 Pure and applied fields of biology",
+            "1.3 Major discoveries that revolutionized biology",
+            "1.4 The contribution of biological discoveries to society and environment",
+            "1.5 Ethiopian biologist and their contribution"
           ]
         },
         {
           "unit": "Unit 2",
-          "title": "The Cell",
+          "title": "Plants",
           "subtopics": [
-            "2.1 Microscopy and Cell Structure",
-            "2.2 Plant and Animal Cells",
-            "2.3 Specialized Cells",
-            "2.4 Movement Across Cell Membranes"
+            "2.1 Characteristics of plants",
+            "2.2 Flowering and non flowering plants",
+            "2.3 Structure and function of plant parts",
+            "2.3.1 Internal structure of leaf",
+            "2.3.2 Internal structure of stem",
+            "2.3.3 Internal structure of root",
+            "2.4 Reproduction of plants",
+            "2.4.1 Reproductive Structure and Life cycle of non flowering plants",
+            "2.4.2 Reproductive Structure and life cycle of flowering plants",
+            "2.4.3 Pollination",
+            "2.5 Seeds",
+            "2.6 Seed dispersal and Germination",
+            "2.6.2 Seed dispersal",
+            "2.6.2 Germination of seed",
+            "2.7 Photosynthesis",
+            "2.7.1 The photosynthesis apparatus",
+            "2.7.2 The light absorbing system in chloroplast",
+            "2.7.3 Mechanism of photosynthesis",
+            "2.7.4 Testing a leaf for starch",
+            "2.8 Transport in plants",
+            "2.8.1 Transporting system in plants",
+            "2.8.2 Mechanism if transporting of plants",
+            "2.9 Response in plants",
+            "2.9.1 Tropism as growth response",
+            "2.10 Medical plants",
+            "2.11 Renowned Ethiopia botanist"
           ]
         },
         {
           "unit": "Unit 3",
-          "title": "Tissues and Organs",
+          "title": "Biochemical Molecules",
           "subtopics": [
-            "3.1 Plant Tissues",
-            "3.2 Animal Tissues",
-            "3.3 Organs and Organ Systems"
+            "3.1 Biochemical molecules",
+            "3.1.1 Inorganic molecules: water",
+            "3.1.1.1 Properties of water",
+            "3.1.2 Inorganic Ions",
+            "3.1.3 Organic molecules"
           ]
         },
         {
           "unit": "Unit 4",
-          "title": "Human Nutrition and Health",
+          "title": "Cell Reproduction",
           "subtopics": [
-            "4.1 Human Digestive System",
-            "4.2 Balanced Diet and Malnutrition",
-            "4.3 Common Diseases and Health"
+            "4.1 Cell cycle",
+            "4.2 The cell division",
+            "4.2.1 The mitosis",
+            "4.2.2 Meiosis",
+            "4.3 Renowned Ethiopian genetics"
           ]
         },
         {
           "unit": "Unit 5",
-          "title": "Biodiversity and Evolution",
+          "title": "Human Biology",
           "subtopics": [
-            "5.1 Concept of Biodiversity",
-            "5.2 Classification Systems",
-            "5.3 Evolution and Natural Selection"
+            "5.1 The digestive system",
+            "5.2 Circulatory and lymphatic system",
+            "5.2.1 Blood donation",
+            "5.2.2 Disease circulatory and lymphatic system",
+            "5.3 The breathing system",
+            "5.4 The human urinary system",
+            "5.5 The immune system",
+            "5.6 Renowned physician in Ethiopia"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Ecological Interactions",
+          "subtopics": [
+            "6.1 Trophic level",
+            "6.1.1 Food chain and food web",
+            "6.1.2 Follow of energy and matter through ecosystem",
+            "6.2 Cycling of materials in an ecosystem",
+            "6.2.1 Water cycle",
+            "6.2.2 Carbon cycle",
+            "6.2.3 Nitrogen cycle",
+            "6.2.4 Phosphorus cycle"
           ]
         }
       ]
@@ -61,36 +106,91 @@
           "unit": "Unit 1",
           "title": "Chemical Reactions and Stoichiometry",
           "subtopics": [
-            "1.1 Chemical Equations",
-            "1.2 Types of Chemical Reactions",
-            "1.3 Laws of Chemical Combination",
-            "1.4 Mole Concept and Stoichiometry"
+            "1.1 Introduction",
+            "1.2 Chemical Equations",
+            "1.2.2 Balancing Chemical Equations",
+            "1.3 Types of Chemical Reactions",
+            "1.4 Oxidation and Reduction Reactions",
+            "1.4.1 Oxidation Number or Oxidation State",
+            "1.4.2 Oxidizing and Reducing Agents",
+            "1.4.3 Analyzing Redox Reactions",
+            "1.4.4 Balancing Redox Reactions: Oxidation-Number-Change Method",
+            "1.5 Molecular and Formula Masses, the Mole Concept and Chemical Formulas",
+            "1.5.1 Molecular mass (MM) and Formula Mass (FM)",
+            "1.5.2 The Mole Concept",
+            "1.5.3 Chemical Formulas - Empirical and Molecular Formulas",
+            "1.6 Stoichiometry",
+            "1.6.1 Molar Ratios in Balanced Chemical Equation",
+            "1.6.2 Mass – Mass Relationships",
+            "1.6.3 Volume – Volume Relationships",
+            "1.6.4 Mass – Volume Relationships",
+            "1.6.5 Limiting and Excess Reactants",
+            "1.6.6 Theoretical, Actual and Percentage Yields"
           ]
         },
         {
           "unit": "Unit 2",
           "title": "Solutions",
           "subtopics": [
-            "2.1 Types of Solutions",
-            "2.2 Solubility and Concentration",
-            "2.3 Factors Affecting Solubility"
+            "2.1 Heterogeneous and Homogeneous Mixtures",
+            "2.1.1 Suspensions, Solutions, Colloids",
+            "2.2 The Solution Process",
+            "2.2.2 Solutions of Ionic Solids in Water",
+            "2.2.3 The Solubility Rules for Ionic Solids",
+            "2.2.4 Solution of Liquids in Liquids",
+            "2.2.5 The Rate of Dissolution",
+            "2.2.6 Energy Changes in Solution Process",
+            "2.3 Solubility as an Equilibrium Process",
+            "2.3.1 Unsaturated, Saturated, and Supersaturated Solutions",
+            "2.3.2 Factors Affecting Solubility of Substances",
+            "2.4 Ways of Expressing Concentration of Solutions",
+            "2.4.3 Molarity",
+            "2.4.4 Molality",
+            "2.4.5 Normality",
+            "2.4.6 Conversion of Concentration Units",
+            "2.5 Preparation of solutions",
+            "2.5.1 Preparation of stock solutions from pure compound",
+            "2.5.2 Diluting solution",
+            "2.7 Describing Reactions in Solution"
           ]
         },
         {
           "unit": "Unit 3",
-          "title": "Electrochemistry",
+          "title": "Important Inorganic Compounds",
           "subtopics": [
-            "3.1 Oxidation and Reduction",
-            "3.2 Electrochemical Cells",
-            "3.3 Electrolysis"
+            "3.1 Introduction",
+            "3.2 Oxides",
+            "3.3 Acids",
+            "3.4 Bases",
+            "3.5 Salts"
           ]
         },
         {
           "unit": "Unit 4",
-          "title": "Periodic Table and Periodicity",
+          "title": "Energy Changes and Electrochemistry",
           "subtopics": [
-            "4.1 Modern Periodic Table",
-            "4.2 Periodic Trends in Properties"
+            "4.1.1 Exothermic and Endothermic Chemical Reactions",
+            "4.1.2 Importance of Chemical Changes",
+            "4.2 Energy Changes in Electrochemistry",
+            "4.2.1 Electrochemistry",
+            "4.2.2 Electrical Conductivity",
+            "4.3 Electrochemical Cells",
+            "4.3.1 Galvanic (Voltaic) Cells",
+            "4.4 Electrolysis",
+            "4.4.1 Electrolysis of Molten (Fused) Electrolytes"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Metals and Nonmetals",
+          "subtopics": [
+            "5.1 Introduction",
+            "5.2 General Properties of Metals and Production of Some Metals",
+            "5.2.1 Properties and Extraction of Metals",
+            "5.2.2 Alloys",
+            "5.2.3 Production of Aluminum, Iron and Copper",
+            "5.3.1 General Properties of Nonmetals and Common Uses of Some Nonmetallic Compounds",
+            "5.3.2 Production of Nitrogen, Phosphorous, Oxygen, Sulphur and Chlorine"
           ]
         }
       ]
@@ -103,36 +203,104 @@
           "title": "Relations and Functions",
           "subtopics": [
             "1.1 Relations",
+            "1.1.1 Revision of patterns",
+            "1.1.2 Cartesian coordinate system in two dimensions",
+            "1.1.3 Basic concepts of relations",
+            "1.1.4 Graphs of Relations",
             "1.2 Functions",
-            "1.3 Linear Functions",
-            "1.4 Quadratic Functions"
+            "1.2.1 The notion of function",
+            "1.2.2 Combination of functions",
+            "1.2.3 Types of functions",
+            "1.2.4 Graphs of functions"
           ]
         },
         {
           "unit": "Unit 2",
-          "title": "Coordinate Geometry",
+          "title": "Polynomial Functions",
           "subtopics": [
-            "2.1 Distance Formula",
-            "2.2 Midpoint Formula",
-            "2.3 Equation of a Line"
+            "2.1 Definition of Polynomial Function",
+            "2.2 Operations on Polynomial Functions",
+            "2.3 Theorems on Polynomials",
+            "2.4 Zeros of a Polynomial Function",
+            "2.5 Graphs of Polynomial Functions",
+            "2.6 Applications"
           ]
         },
         {
           "unit": "Unit 3",
-          "title": "Trigonometry",
+          "title": "Exponential and Logarithmic Functions",
           "subtopics": [
-            "3.1 Trigonometric Ratios of Acute Angles",
-            "3.2 Values of Special Angles",
-            "3.3 Applications of Right Triangles"
+            "3.1 Exponents and Logarithms",
+            "3.1.1 Exponents",
+            "3.1.2 Logarithms",
+            "3.2 The Exponential Functions and Their Graphs",
+            "3.2.1 Exponential Functions",
+            "3.2.3 The Natural Exponential Function",
+            "3.3 The Logarithmic Functions and Their Graphs",
+            "3.3.1 The Logarithmic Functions",
+            "3.3.2 Graphs of Logarithmic Functions",
+            "3.3.3 Natural Logarithms",
+            "3.4 Solving Exponential and Logarithmic Equations",
+            "3.4.1 Solving Exponential Equations",
+            "3.4.2 Solving Logarithmic Equations",
+            "3.5 Relation Between Exponential and Logarithmic Functions with the Same Base",
+            "3.6 Applications",
+            "3.6.1 Compound Interest",
+            "3.6.2 Population Growth",
+            "3.6.3 The pH Scale"
           ]
         },
         {
           "unit": "Unit 4",
-          "title": "Probability and Statistics",
+          "title": "Trigonometric Functions",
           "subtopics": [
-            "4.1 Data Organization",
-            "4.2 Measures of Central Tendency",
-            "4.3 Basic Probability"
+            "4.1 Radian Measure of Angle: Conversion between radian and degree measures",
+            "4.2 Basic Trigonometric Functions",
+            "4.2.1 The sine, cosine and tangent functions",
+            "4.2.2 Trigonometric values of angles",
+            "4.3 Trigonometric Identities and Equations",
+            "4.4 Applications of Trigonometric Functions"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "title": "Circle",
+          "subtopics": [
+            "5.1 Symmetrical Properties of Circles",
+            "5.2 Angle Properties of Circles",
+            "5.3 Arc Lengths, Perimeters and Areas of Segments and Sectors",
+            "5.4 Theorems on Angles and Arcs Determined by Lines Intersecting inside, on and outside a Circle"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Solid Figures",
+          "subtopics": [
+            "6.1 Revision of Prisms and Cylinders",
+            "6.2 Pyramids, Cones and Spheres",
+            "6.2.1 Surface Area of Pyramids and Cones",
+            "6.2.2 Horizontal cross-section of pyramids and cones",
+            "6.2.3 Volume of Pyramids and Cones",
+            "6.2.4 Surface Area and Volume of Sphere",
+            "6.3 Frustum of Pyramids and Cones",
+            "6.4 Surface Area and Volume of Composed Solids",
+            "6.5 Applications"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "title": "Coordinate Geometry",
+          "subtopics": [
+            "7.1 Distance Between Two Points",
+            "7.2 Division of a Line Segment",
+            "7.3 Equation of a Line",
+            "7.3.1 Gradient (slope) of a line",
+            "7.3.2 Slope of a line in terms of angle of inclination",
+            "7.3.3 Different forms of equation of a line",
+            "7.4 Parallel and Perpendicular Lines",
+            "7.4.1 Slopes of parallel and perpendicular lines",
+            "7.5 Equation of a Circle",
+            "7.6 Applications"
           ]
         }
       ]
@@ -142,48 +310,83 @@
       "units": [
         {
           "unit": "Unit 1",
-          "title": "Vectors",
+          "title": "Vector Quantities",
           "subtopics": [
-            "1.1 Scalar and Vector Quantities",
-            "1.2 Graphical Addition of Vectors",
-            "1.3 Resolution of Vectors"
+            "1.1 Scalars and Vectors",
+            "1.2 Vector representations",
+            "1.3 Vector addition and subtraction",
+            "1.4 Graphical method of vector addition",
+            "1.5 Vector resolution"
           ]
         },
         {
           "unit": "Unit 2",
-          "title": "Kinematics",
+          "title": "Uniformly Accelerated Motion",
           "subtopics": [
-            "2.1 Motion in a Plane",
-            "2.2 Projectile Motion",
-            "2.3 Circular Motion"
+            "2.1 Position and Displacement",
+            "2.2 Average velocity and instantaneous velocity",
+            "2.3 Acceleration",
+            "2.4 Equations of motion with constant acceleration",
+            "2.5 Graphical representation of uniformly accelerated motion",
+            "2.6 Relative velocity in one dimension"
           ]
         },
         {
           "unit": "Unit 3",
-          "title": "Dynamics",
+          "title": "Elasticity and Static Equilibrium of Rigid Body",
           "subtopics": [
-            "3.1 Newton's Laws of Motion",
-            "3.2 Momentum and Impulse",
-            "3.3 Conservation of Momentum"
+            "3.1 Elasticity and plasticity",
+            "3.2 Density and specific gravity",
+            "3.3 Stress and Strain",
+            "3.4 The Young Modulus",
+            "3.5 Static equilibrium"
           ]
         },
         {
           "unit": "Unit 4",
-          "title": "Work, Energy, and Power",
+          "title": "Static and Current Electricity",
           "subtopics": [
-            "4.1 Work Done by Constant Forces",
-            "4.2 Kinetic and Potential Energy",
-            "4.3 Work-Energy Theorem",
-            "4.4 Power"
+            "4.1 Charges in Nature",
+            "4.2 Methods of Charging a Body",
+            "4.3 The electroscope",
+            "4.4 Electrical Discharge",
+            "4.5 Coulomb’s law of electrostatic",
+            "4.6 The electric field",
+            "4.7 Electric circuits",
+            "4.8 Current, Voltage, and Ohm’s Law",
+            "4.9 Combination of resistors in a circuit",
+            "4.10 Voltmeter and ammeter connection in a circuit",
+            "4.11 Electrical safety in general and local context",
+            "4.12 Electric projects"
           ]
         },
         {
           "unit": "Unit 5",
-          "title": "Electrostatics and Current Electricity",
+          "title": "Magnetism",
           "subtopics": [
-            "5.1 Electric Charge and Coulomb's Law",
-            "5.2 Electric Current and Ohm's Law",
-            "5.3 Electrical Circuits and Resistance"
+            "5.1 Magnet",
+            "5.2 Magnetic Field",
+            "5.3 The Earth’s magnetic field and the compass",
+            "5.4 Magnetic field of a current-carrying conductor",
+            "5.5 Magnetic force on a moving charge placed in a uniform magnetic field",
+            "5.6 Magnetic force on a current-carrying wire",
+            "5.7 Magnetic force between two parallel current-carrying wires",
+            "5.8 Applications of magnetism"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "title": "Electromagnetic Waves and Geometrical Optics",
+          "subtopics": [
+            "6.1 Electromagnetic (EM) waves",
+            "6.2 EM Spectrum",
+            "6.3 Light as a wave",
+            "6.4 Laws of reflection & refraction",
+            "6.5 Mirrors and lenses",
+            "6.6 Human eye and optical instruments",
+            "6.7 Primary colors of light and human vision",
+            "6.8 Color addition of light",
+            "6.9 Color subtraction of light using filters"
           ]
         }
       ]

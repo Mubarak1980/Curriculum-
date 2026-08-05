@@ -1,1 +1,136 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Revision Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Ethiopian Curriculum Explorer</h1>
+            <p class="subtitle">Select your grade and subject to review subtopics.</p>
+        </header>
+
+        <div class="controls">
+            <select id="gradeSelect">
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+            </select>
+
+            <select id="subjectSelect">
+                <option value="all">All Subjects</option>
+            </select>
+
+            <input type="text" id="searchInput" placeholder="Search subtopics...">
+        </div>
+
+        <div id="content">
+            <div class="loading">Loading curriculum data...</div>
+        </div>
+    </div>
+
+    <script>
+        let currentData = null;
+
+        const gradeSelect = document.getElementById('gradeSelect');
+        const subjectSelect = document.getElementById('subjectSelect');
+        const searchInput = document.getElementById('searchInput');
+        const contentDiv = document.getElementById('content');
+
+        async function loadGradeData(grade) {
+            contentDiv.innerHTML = `<div class="loading">Loading Grade ${grade} data...</div>`;
+            try {
+                const response = await fetch(`Grade${grade}.json`);
+                if (!response.ok) throw new Error(`Could not load Grade${grade}.json`);
+                currentData = await response.json();
+                populateSubjectDropdown(currentData.subjects);
+                renderCurriculum(currentData.subjects);
+            } catch (err) {
+                contentDiv.innerHTML = `<div class="error">Error loading data for Grade ${grade}. Make sure ` +
+                    `<b>Grade${grade}.json</b> exists in your repository!</div>`;
+                console.error(err);
+            }
+        }
+
+        function populateSubjectDropdown(subjects) {
+            const currentSelected = subjectSelect.value;
+            subjectSelect.innerHTML = '<option value="all">All Subjects</option>';
+            subjects.forEach(sub => {
+                const option = document.createElement('option');
+                option.value = sub.name;
+                option.textContent = sub.name;
+                subjectSelect.appendChild(option);
+            });
+            subjectSelect.value = subjects.some(s => s.name === currentSelected) ? currentSelected : 'all';
+        }
+
+        function renderCurriculum(subjects) {
+            const selectedSubject = subjectSelect.value;
+            const searchTerm = searchInput.value.toLowerCase();
+
+            let html = '';
+
+            subjects.forEach(subject => {
+                if (selectedSubject !== 'all' && subject.name !== selectedSubject) return;
+
+                let subjectHasMatches = false;
+                let unitsHtml = '';
+
+                subject.units.forEach(unit => {
+                    const filteredSubtopics = unit.subtopics.filter(sub => 
+                        sub.toLowerCase().includes(searchTerm) || 
+                        unit.title.toLowerCase().includes(searchTerm) ||
+                        unit.unit.toLowerCase().includes(searchTerm)
+                    );
+
+                    if (filteredSubtopics.length > 0 || searchTerm === '') {
+                        subjectHasMatches = true;
+                        unitsHtml += `
+                            <div class="unit-card">
+                                <div class="unit-header">${unit.unit}: ${unit.title}</div>
+                                <ul>
+                                    ${(searchTerm === '' ? unit.subtopics : filteredSubtopics)
+                                        .map(sub => `<li>${sub}</li>`).join('')}
+                                </ul>
+                            </div>
+                        `;
+                    }
+                });
+
+                if (subjectHasMatches) {
+                    html += `<h2 style="color: var(--text-main); margin-top: 30px; border-bottom: 2px solid var(--primary); padding-bottom: 5px;">📚 ${subject.name}</h2>`;
+                    html += unitsHtml;
+                }
+            });
+
+            if (html === '') {
+                html = `<div class="loading">No matching subtopics found.</div>`;
+            }
+
+            contentDiv.innerHTML = html;
+        }
+
+        // Event Listeners
+        gradeSelect.addEventListener('change', (e) => {
+            loadGradeData(e.target.value);
+        });
+
+        subjectSelect.addEventListener('change', () => {
+            if (currentData) renderCurriculum(currentData.subjects);
+        });
+
+        searchInput.addEventListener('input', () => {
+            if (currentData) renderCurriculum(currentData.subjects);
+        });
+
+        // Initial load on page start
+        loadGradeData(gradeSelect.value);
+    </script>
+</body>
+</html>

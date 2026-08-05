@@ -28,6 +28,8 @@
             </select>
 
             <input type="text" id="searchInput" placeholder="Search subtopics...">
+
+            <button id="commonViewBtn" style="padding: 10px 15px; background: var(--primary, #4f46e5); color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Common Units & Topics</button>
         </div>
 
         <div id="content">
@@ -37,11 +39,28 @@
 
     <script>
         let currentData = null;
+        const allGradesData = {};
 
         const gradeSelect = document.getElementById('gradeSelect');
         const subjectSelect = document.getElementById('subjectSelect');
         const searchInput = document.getElementById('searchInput');
         const contentDiv = document.getElementById('content');
+        const commonViewBtn = document.getElementById('commonViewBtn');
+
+        // Automatically load all grade JSON files in the background for cross-analysis
+        async function loadAllGrades() {
+            const grades = ['grade9', 'grade10', 'grade11', 'grade12'];
+            for (const g of grades) {
+                try {
+                    const res = await fetch(`${g}.json`);
+                    if (res.ok) {
+                        allGradesData[g] = await res.json();
+                    }
+                } catch (e) {
+                    console.error(`Could not load ${g}.json for common analysis`, e);
+                }
+            }
+        }
 
         async function loadGradeData(gradeFile) {
             contentDiv.innerHTML = `<div class="loading">Loading data...</div>`;
@@ -116,6 +135,70 @@
             contentDiv.innerHTML = html;
         }
 
+        function renderCommonAnalysis() {
+            contentDiv.innerHTML = `<h2>🔍 Cross-Grade Common Units & Topics</h2><p class="subtitle">Comparing overlaps across your grade files.</p>`;
+            
+            const unitMap = {};
+            const topicMap = {};
+
+            Object.keys(allGradesData).forEach(gradeKey => {
+                const gradeData = allGradesData[gradeKey];
+                const gradeNum = gradeData.grade;
+
+                gradeData.subjects.forEach(subject => {
+                    subject.units.forEach(unit => {
+                        // Track Units by Title
+                        const cleanUnitTitle = unit.title.toLowerCase().trim();
+                        if (!unitMap[cleanUnitTitle]) unitMap[cleanUnitTitle] = { title: unit.title, occurrences: [] };
+                        unitMap[cleanUnitTitle].occurrences.push({ grade: gradeNum, subject: subject.name, unit: unit.unit });
+
+                        // Track Subtopics
+                        unit.subtopics.forEach(sub => {
+                            const cleanSub = sub.toLowerCase().trim();
+                            if (!topicMap[cleanSub]) topicMap[cleanSub] = { title: sub, occurrences: [] };
+                            topicMap[cleanSub].occurrences.push({ grade: gradeNum, subject: subject.name, unit: `${unit.unit} (${unit.title})` });
+                        });
+                    });
+                });
+            });
+
+            // Render Common Units
+            let unitsHtml = `<h3 style="margin-top: 20px; color: var(--primary);">📌 Common Units Across Grades</h3>`;
+            let foundUnits = false;
+            Object.values(unitMap).forEach(item => {
+                if (item.occurrences.length > 1) {
+                    foundUnits = true;
+                    unitsHtml += `
+                        <div class="unit-card">
+                            <div class="unit-header">${item.title}</div>
+                            <ul>
+                                ${item.occurrences.map(occ => `<li>Grade ${occ.grade} - <b>${occ.subject}</b> (${occ.unit})</li>`).join('')}
+                            </ul>
+                        </div>`;
+                }
+            });
+            if (!foundUnits) unitsHtml += `<p>No duplicate unit titles found across different grades yet.</p>`;
+
+            // Render Common Topics
+            let topicsHtml = `<h3 style="margin-top: 30px; color: var(--primary);">🔗 Common Topics Across Grades</h3>`;
+            let foundTopics = false;
+            Object.values(topicMap).forEach(item => {
+                if (item.occurrences.length > 1) {
+                    foundTopics = true;
+                    topicsHtml += `
+                        <div class="unit-card">
+                            <div class="unit-header">${item.title}</div>
+                            <ul>
+                                ${item.occurrences.map(occ => `<li>Grade ${occ.grade} - <b>${occ.subject}</b> in ${occ.unit}</li>`).join('')}
+                            </ul>
+                        </div>`;
+                }
+            });
+            if (!foundTopics) topicsHtml += `<p>No duplicate subtopics found across different grades yet.</p>`;
+
+            contentDiv.innerHTML += unitsHtml + topicsHtml;
+        }
+
         // Event Listeners
         gradeSelect.addEventListener('change', (e) => {
             loadGradeData(e.target.value);
@@ -129,7 +212,12 @@
             if (currentData) renderCurriculum(currentData.subjects);
         });
 
+        commonViewBtn.addEventListener('click', () => {
+            renderCommonAnalysis();
+        });
+
         // Initial load on page start
+        loadAllGrades();
         loadGradeData(gradeSelect.value);
     </script>
 </body>

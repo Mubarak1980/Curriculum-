@@ -135,11 +135,20 @@
             contentDiv.innerHTML = html;
         }
 
+        // Extracts meaningful core keywords to find similar or related topics across grades
+        function extractKeywords(text) {
+            const stopWords = new Set(['and', 'the', 'of', 'in', 'to', 'a', 'an', 'for', 'on', 'with', 'by', 'as', 'at', 'from', 'intro', 'introduction', 'basic', 'general']);
+            return text.toLowerCase()
+                .replace(/^(unit\s*\d+[\s:\-]*|\d+(\.\d+)*[\s:\-]*)/i, '') // remove numbering/prefixes
+                .replace(/[^\w\s]/gi, '') // remove punctuation
+                .split(/\s+/)
+                .filter(word => word.length > 3 && !stopWords.has(word));
+        }
+
         function renderCommonAnalysis() {
-            contentDiv.innerHTML = `<h2>🔍 Cross-Grade Common Units & Topics</h2><p class="subtitle">Comparing overlaps across your grade files.</p>`;
+            contentDiv.innerHTML = `<h2>🔍 Related & Common Units & Topics</h2><p class="subtitle">Tracking similar subject themes and overlapping concepts across grades.</p>`;
             
-            const unitMap = {};
-            const topicMap = {};
+            const themeMap = {};
 
             Object.keys(allGradesData).forEach(gradeKey => {
                 const gradeData = allGradesData[gradeKey];
@@ -147,56 +156,58 @@
 
                 gradeData.subjects.forEach(subject => {
                     subject.units.forEach(unit => {
-                        // Track Units by Title
-                        const cleanUnitTitle = unit.title.toLowerCase().trim();
-                        if (!unitMap[cleanUnitTitle]) unitMap[cleanUnitTitle] = { title: unit.title, occurrences: [] };
-                        unitMap[cleanUnitTitle].occurrences.push({ grade: gradeNum, subject: subject.name, unit: unit.unit });
+                        // Combine unit title and its subtopics to evaluate thematic overlap
+                        const combinedText = `${unit.title} ${unit.subtopics.join(' ')}`;
+                        const keywords = extractKeywords(combinedText);
 
-                        // Track Subtopics
-                        unit.subtopics.forEach(sub => {
-                            const cleanSub = sub.toLowerCase().trim();
-                            if (!topicMap[cleanSub]) topicMap[cleanSub] = { title: sub, occurrences: [] };
-                            topicMap[cleanSub].occurrences.push({ grade: gradeNum, subject: subject.name, unit: `${unit.unit} (${unit.title})` });
+                        keywords.forEach(keyword => {
+                            if (!themeMap[keyword]) {
+                                themeMap[keyword] = { theme: keyword, occurrences: [] };
+                            }
+                            
+                            const entryId = `G${gradeNum}-${subject.name}-${unit.unit}`;
+                            if (!themeMap[keyword].occurrences.some(o => o.id === entryId)) {
+                                themeMap[keyword].occurrences.push({
+                                    id: entryId,
+                                    grade: gradeNum,
+                                    subject: subject.name,
+                                    unit: unit.unit,
+                                    title: unit.title
+                                });
+                            }
                         });
                     });
                 });
             });
 
-            // Render Common Units
-            let unitsHtml = `<h3 style="margin-top: 20px; color: var(--primary);">📌 Common Units Across Grades</h3>`;
-            let foundUnits = false;
-            Object.values(unitMap).forEach(item => {
-                if (item.occurrences.length > 1) {
-                    foundUnits = true;
-                    unitsHtml += `
+            let commonHtml = `<h3 style="margin-top: 20px; color: var(--primary);">🔗 Similar & Related Concepts Across Grades</h3>`;
+            let foundCommon = false;
+
+            const sortedThemes = Object.values(themeMap).sort((a, b) => b.occurrences.length - a.occurrences.length);
+
+            sortedThemes.forEach(item => {
+                const uniqueGrades = [...new Set(item.occurrences.map(o => o.grade))];
+                
+                // Only list themes that connect across multiple distinct grade levels
+                if (uniqueGrades.length > 1 && item.occurrences.length >= 2) {
+                    foundCommon = true;
+                    const capitalizedTheme = item.theme.charAt(0).toUpperCase() + item.theme.slice(1);
+
+                    commonHtml += `
                         <div class="unit-card">
-                            <div class="unit-header">${item.title}</div>
+                            <div class="unit-header">📌 Theme / Topic Cluster: "${capitalizedTheme}"</div>
                             <ul>
-                                ${item.occurrences.map(occ => `<li>Grade ${occ.grade} - <b>${occ.subject}</b> (${occ.unit})</li>`).join('')}
+                                ${item.occurrences.map(occ => `<li>Grade ${occ.grade} - <b>${occ.subject}</b> (Unit ${occ.unit}: ${occ.title})</li>`).join('')}
                             </ul>
                         </div>`;
                 }
             });
-            if (!foundUnits) unitsHtml += `<p>No duplicate unit titles found across different grades yet.</p>`;
 
-            // Render Common Topics
-            let topicsHtml = `<h3 style="margin-top: 30px; color: var(--primary);">🔗 Common Topics Across Grades</h3>`;
-            let foundTopics = false;
-            Object.values(topicMap).forEach(item => {
-                if (item.occurrences.length > 1) {
-                    foundTopics = true;
-                    topicsHtml += `
-                        <div class="unit-card">
-                            <div class="unit-header">${item.title}</div>
-                            <ul>
-                                ${item.occurrences.map(occ => `<li>Grade ${occ.grade} - <b>${occ.subject}</b> in ${occ.unit}</li>`).join('')}
-                            </ul>
-                        </div>`;
-                }
-            });
-            if (!foundTopics) topicsHtml += `<p>No duplicate subtopics found across different grades yet.</p>`;
+            if (!foundCommon) {
+                commonHtml += `<p>No broad overlapping themes found across different grades yet.</p>`;
+            }
 
-            contentDiv.innerHTML += unitsHtml + topicsHtml;
+            contentDiv.innerHTML += commonHtml;
         }
 
         // Event Listeners

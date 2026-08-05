@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,11 +15,12 @@
         </header>
 
         <div class="controls">
+            <!-- Ensure option values match your lowercase filenames (grade9.json, grade10.json, etc.) -->
             <select id="gradeSelect">
-                <option value="9">grade 9</option>
-                <option value="10">grade 10</option>
-                <option value="11">grade 11</option>
-                <option value="12">grade 12</option>
+                <option value="grade9">Grade 9</option>
+                <option value="grade10">Grade 10</option>
+                <option value="grade11">Grade 11</option>
+                <option value="grade12">Grade 12</option>
             </select>
 
             <select id="subjectSelect">
@@ -43,17 +43,17 @@
         const searchInput = document.getElementById('searchInput');
         const contentDiv = document.getElementById('content');
 
-        async function loadGradeData(grade) {
-            contentDiv.innerHTML = `<div class="loading">Loading Grade ${grade} data...</div>`;
+        async function loadGradeData(gradeFile) {
+            contentDiv.innerHTML = `<div class="loading">Loading data...</div>`;
             try {
-                const response = await fetch(`Grade${grade}.json`);
-                if (!response.ok) throw new Error(`Could not load Grade${grade}.json`);
+                const response = await fetch(`${gradeFile}.json`);
+                if (!response.ok) throw new Error(`Could not load ${gradeFile}.json`);
                 currentData = await response.json();
                 populateSubjectDropdown(currentData.subjects);
                 renderCurriculum(currentData.subjects);
             } catch (err) {
-                contentDiv.innerHTML = `<div class="error">Error loading data for Grade ${grade}. Make sure ` +
-                    `<b>Grade${grade}.json</b> exists in your repository!</div>`;
+                contentDiv.innerHTML = `<div class="error">Error loading data. Make sure ` +
+                    `<b>${gradeFile}.json</b> exists in your repository!</div>`;
                 console.error(err);
             }
         }

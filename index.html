@@ -13,8 +13,8 @@
 
     <div class="container">
         <header>
-            <h1> Curriculum</h1>
-            <p class="subtitle">Select your grade and subject to review subtopics.</p>
+            <h1>📚 Curriculum Revision Hub</h1>
+            <p class="subtitle">Select your grade and subject to review subtopics offline.</p>
         </header>
 
         <div class="controls">
@@ -32,7 +32,7 @@
 
             <input type="text" id="searchInput" placeholder="Search subtopics...">
 
-            <button id="commonViewBtn" style="padding: 10px 15px; background: var(--primary, #4f46e5); color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Common Units & Topics</button>
+            <button id="commonViewBtn">Common Units & Topics</button>
         </div>
 
         <div id="content">
@@ -74,7 +74,7 @@
                 populateSubjectDropdown(currentData.subjects);
                 renderCurriculum(currentData.subjects);
             } catch (err) {
-                contentDiv.innerHTML = `<div class="error">Error loading data. Make sure ` +
+                contentDiv.innerHTML = `<div class="error" style="color: red; padding: 20px; text-align: center;">Error loading data. Make sure ` +
                     `<b>${gradeFile}.json</b> exists in your repository!</div>`;
                 console.error(err);
             }
@@ -126,7 +126,7 @@
                 });
 
                 if (subjectHasMatches) {
-                    html += `<h2 style="color: var(--text-main); margin-top: 30px; border-bottom: 2px solid var(--primary); padding-bottom: 5px;">📚 ${subject.name}</h2>`;
+                    html += `<h2 style="color: var(--text-main, #1e293b); margin-top: 30px; border-bottom: 2px solid var(--primary, #4f46e5); padding-bottom: 5px;">📚 ${subject.name}</h2>`;
                     html += unitsHtml;
                 }
             });
@@ -195,7 +195,7 @@
             });
 
             // --- RENDER SECTION 1: Same Subject Progressions ---
-            let sameSubjectHtml = `<h3 style="margin-top: 20px; color: var(--primary);">📌 1. Common Concepts Within the Same Subject</h3>`;
+            let sameSubjectHtml = `<h3 style="margin-top: 20px; color: var(--primary, #4f46e5);">📌 1. Common Concepts Within the Same Subject</h3>`;
             let foundSameSubject = false;
 
             Object.keys(sameSubjectMap).forEach(key => {
@@ -216,7 +216,7 @@
             if (!foundSameSubject) sameSubjectHtml += `<p>No multi-grade progressions found within the same subject yet.</p>`;
 
             // --- RENDER SECTION 2: Smart Related Cross-Topic Links ---
-            let crossHtml = `<h3 style="margin-top: 30px; color: var(--primary);">🔗 2. Smart Related Topics & Conceptual Links</h3>`;
+            let crossHtml = `<h3 style="margin-top: 30px; color: var(--primary, #4f46e5);">🔗 2. Smart Related Topics & Conceptual Links</h3>`;
             let foundCross = false;
 
             Object.keys(crossDisciplineMap).forEach(clusterName => {
@@ -228,7 +228,7 @@
                     crossHtml += `
                         <div class="unit-card">
                             <div class="unit-header">Concept Cluster: "${clusterName}"</div>
-                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: -5px; margin-bottom: 10px;">
+                            <p style="font-size: 0.9rem; color: var(--text-muted, #64748b); margin-top: -5px; margin-bottom: 10px;">
                                 Semantically linked across subjects: <b>${uniqueSubjects.join(', ')}</b>
                             </p>
                             <ul>
